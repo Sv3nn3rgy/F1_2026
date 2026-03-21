@@ -262,115 +262,6 @@
             margin-top: 40px;
             opacity: 0.8;
         }
-
-        .heatmap-container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            animation: slideUp 0.6s ease-out 0.35s both;
-            overflow-x: auto;
-        }
-
-        .heatmap-container h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #1f2937;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
-        }
-
-        .heatmap-table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 500px;
-        }
-
-        .heatmap-table thead {
-            background: #f3f4f6;
-        }
-
-        .heatmap-table th {
-            padding: 15px 10px;
-            text-align: center;
-            font-weight: 600;
-            color: #374151;
-            font-size: 0.85em;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .heatmap-table th:first-child {
-            text-align: left;
-            font-size: 0.95em;
-        }
-
-        .heatmap-table td {
-            padding: 12px 8px;
-            border: 1px solid #e5e7eb;
-            text-align: center;
-            font-weight: 500;
-            font-size: 0.9em;
-        }
-
-        .heatmap-table tr:first-child td {
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .heatmap-table tbody tr:hover {
-            background-color: #f9fafb;
-        }
-
-        .heatmap-cell {
-            padding: 8px 12px;
-            border-radius: 6px;
-            color: white;
-            font-weight: 600;
-            min-width: 60px;
-            display: inline-block;
-        }
-
-        .heatmap-cell.high {
-            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-        }
-
-        .heatmap-cell.medium-high {
-            background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
-        }
-
-        .heatmap-cell.medium {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-        }
-
-        .heatmap-cell.low {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-        }
-
-        .heatmap-legend {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 2px solid #e5e7eb;
-            flex-wrap: wrap;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9em;
-            color: #374151;
-        }
-
-        .legend-color {
-            width: 30px;
-            height: 20px;
-            border-radius: 4px;
-        }
     </style>
 </head>
 <body>
@@ -416,11 +307,6 @@
             <div class="chart-wrapper" style="height: 450px;">
                 <canvas id="progressionChart"></canvas>
             </div>
-        </div>
-
-        <div class="heatmap-container">
-            <h2>🔥 Prediction Accuracy Heatmap</h2>
-            <div id="heatmapContent"></div>
         </div>
     </div>
 
@@ -527,7 +413,6 @@
             createColorCustomizer();
             createRacesChart();
             createProgressionChart();
-            createHeatmap();
         }
 
         function populateLeaderboard() {

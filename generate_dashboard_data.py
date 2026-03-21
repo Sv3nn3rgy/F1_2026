@@ -96,7 +96,7 @@ for race_data in race_points_data:
 
 print()
 
-# 4. PREDICTION ACCURACY HEATMAP DATA
+# 4. PREDICTION ACCURACY HEATMAP DATA 
 print("PREDICTION ACCURACY HEATMAP:")
 accuracy_heatmap = []
 for _, race in races.iterrows():
