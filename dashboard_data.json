@@ -1,0 +1,124 @@
+{
+  "players": [
+    "Veerle",
+    "Bernadette",
+    "Sven",
+    "Milan"
+  ],
+  "player_colors": {
+    "Veerle": "#00D9FF",
+    "Sven": "#390BE1",
+    "Bernadette": "#DC0000",
+    "Milan": "#0AA44E"
+  },
+  "leaderboard": [
+    {
+      "player": "Veerle",
+      "total_points": 16,
+      "last_race_points": 10,
+      "color": "#00D9FF"
+    },
+    {
+      "player": "Sven",
+      "total_points": 16,
+      "last_race_points": 9,
+      "color": "#390BE1"
+    },
+    {
+      "player": "Bernadette",
+      "total_points": 15,
+      "last_race_points": 4,
+      "color": "#DC0000"
+    },
+    {
+      "player": "Milan",
+      "total_points": 10,
+      "last_race_points": 4,
+      "color": "#0AA44E"
+    }
+  ],
+  "races": [
+    {
+      "id": 0,
+      "name": "Australian GP (Race)",
+      "grand_prix": "Australian GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 1,
+      "name": "China GP (Sprint)",
+      "grand_prix": "China GP",
+      "race_type": "Sprint"
+    },
+    {
+      "id": 2,
+      "name": "China GP (Race)",
+      "grand_prix": "China GP",
+      "race_type": "Race"
+    }
+  ],
+  "race_points": [
+    {
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "points_by_player": {
+        "Veerle": 2,
+        "Bernadette": 7,
+        "Sven": 7,
+        "Milan": 2
+      }
+    },
+    {
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "points_by_player": {
+        "Veerle": 4,
+        "Bernadette": 4,
+        "Sven": 0,
+        "Milan": 4
+      }
+    },
+    {
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "points_by_player": {
+        "Veerle": 10,
+        "Bernadette": 4,
+        "Sven": 9,
+        "Milan": 4
+      }
+    }
+  ],
+  "progression": [
+    {
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 2,
+        "Bernadette": 7,
+        "Sven": 7,
+        "Milan": 2
+      }
+    },
+    {
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "cumulative_by_player": {
+        "Veerle": 6,
+        "Bernadette": 11,
+        "Sven": 7,
+        "Milan": 6
+      }
+    },
+    {
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 16,
+        "Bernadette": 15,
+        "Sven": 16,
+        "Milan": 10
+      }
+    }
+  ]
+}

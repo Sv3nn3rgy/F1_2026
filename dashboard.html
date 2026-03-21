@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Prediction Championship Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .leaderboard-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.6s ease-out 0.1s both;
+        }
+
+        .leaderboard-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: #1f2937;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .leaderboard-table thead {
+            background: #f3f4f6;
+        }
+
+        .leaderboard-table th {
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #374151;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .leaderboard-table tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+            transition: background-color 0.3s ease;
+        }
+
+        .leaderboard-table tbody tr:hover {
+            background-color: #f9fafb;
+        }
+
+        .leaderboard-table td {
+            padding: 15px;
+            color: #111827;
+        }
+
+        .rank {
+            font-weight: 700;
+            font-size: 1.1em;
+            min-width: 30px;
+        }
+
+        .player-name {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .points-total {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #667eea;
+        }
+
+        .points-last {
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .chart-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.6s ease-out both;
+        }
+
+        .chart-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .chart-card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .chart-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #1f2937;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            max-height: 100% !important;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .color-customizer {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.6s ease-out 0.05s both;
+        }
+
+        .color-customizer h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #1f2937;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .color-picker {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .color-picker label {
+            font-weight: 600;
+            color: #374151;
+            min-width: 80px;
+        }
+
+        .color-picker input[type="color"] {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .reset-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .reset-btn:hover {
+            background: #764ba2;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏁 F1 Prediction Championship</h1>
+            <p>Track player performance across races</p>
+        </div>
+
+        <div class="color-customizer">
+            <h2>Player Colors</h2>
+            <div class="color-grid" id="colorGrid"></div>
+            <div style="margin-top: 20px;">
+                <button class="reset-btn" onclick="resetColors()">Reset to Default</button>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="leaderboard-card">
+                <h2>📊 Leaderboard</h2>
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Total</th>
+                            <th>Last Race</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody"></tbody>
+                </table>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h2>📈 Points per Race</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="racesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h2>🎯 Cumulative Points Progression</h2>
+            <div class="chart-wrapper" style="height: 450px;">
+                <canvas id="progressionChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>All data synchronized • Updates in real-time</p>
+    </div>
+
+    <script>
+        // Default colors for players
+        const defaultColors = {
+            'Veerle': '#6366F1',
+            'Sven': '#EC4899',
+            'Bernadette': '#F59E0B',
+            'Milan': '#10B981'
+        };
+
+        const DATA_FILE_NAME = 'dashboard_data.json';
+
+        // Store current colors
+        let playerColors = { ...defaultColors };
+
+        // Load dashboard data
+        let dashboardData = null;
+        let chartsInstances = {};
+
+        async function loadDashboard() {
+            try {
+                // Compose a consistent URL for JSON even for file:// use
+                const dataUrl = new URL(DATA_FILE_NAME, window.location.href).href;
+                console.log(`Loading dashboard data from ${dataUrl}`);
+
+                const response = await fetch(dataUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                dashboardData = await response.json();
+                console.log('✓ Loaded dashboard_data.json successfully', dashboardData);
+
+                if (!dashboardData || !dashboardData.players || !dashboardData.leaderboard) {
+                    throw new Error('dashboard_data.json is missing required keys');
+                }
+
+                // Load colors from localStorage if available
+                const savedColors = localStorage.getItem('playerColors');
+                if (savedColors) {
+                    try {
+                        playerColors = JSON.parse(savedColors);
+                        console.log('✓ Loaded saved colors from browser');
+                    } catch (err) {
+                        console.warn('Could not parse saved playerColors; using dashboard_data contents', err);
+                        playerColors = dashboardData.player_colors || defaultColors;
+                    }
+                } else {
+                    playerColors = dashboardData.player_colors || defaultColors;
+                    console.log('✓ Using colors from dashboard_data.json');
+                }
+
+                initializeDashboard();
+            } catch (error) {
+                console.error('❌ Error loading dashboard_data.json:', error);
+
+                if (window.location.protocol === 'file:') {
+                    console.warn('Running from file:// can block fetch requests in some browsers. Run a local server instead: `python -m http.server` and open http://localhost:8000/dashboard.html');
+                }
+
+                console.log('Using embedded fallback data. To fix: ensure dashboard_data.json is in the same folder as dashboard.html and that you use an HTTP server.');
+                // Use embedded data as fallback
+                initializeWithEmbeddedData();
+            }
+        }
+
+        function initializeWithEmbeddedData() {
+            // Embedded data as fallback
+            dashboardData = {
+                'players': ['Veerle', 'Sven', 'Bernadette', 'Milan'],
+                'player_colors': defaultColors,
+                'leaderboard': [
+                    { 'player': 'Veerle', 'total_points': 99, 'last_race_points': 9, 'color': '#6366F1' },
+                    { 'player': 'Sven', 'total_points': 99, 'last_race_points': 9, 'color': '#EC4899' },
+                    { 'player': 'Bernadette', 'total_points': 99, 'last_race_points': 9, 'color': '#F59E0B' },
+                    { 'player': 'Milan', 'total_points': 99, 'last_race_points': 9, 'color': '#10B981' }
+                ],
+                'races': [
+                    { 'id': 0, 'name': 'Australian GP (Race)', 'grand_prix': 'Australian GP', 'race_type': 'Race' },
+                    { 'id': 1, 'name': 'China GP (Sprint)', 'grand_prix': 'China GP', 'race_type': 'Sprint' },
+                    { 'id': 2, 'name': 'China GP (Race)', 'grand_prix': 'China GP', 'race_type': 'Race' }
+                ],
+                'race_points': [
+                    { 'race_id': 0, 'race_name': 'Australian GP (Race)', 'points_by_player': { 'Veerle': 2, 'Bernadette': 7, 'Sven': 7, 'Milan': 2 } },
+                    { 'race_id': 1, 'race_name': 'China GP (Sprint)', 'points_by_player': { 'Veerle': 4, 'Bernadette': 4, 'Sven': 0, 'Milan': 4 } },
+                    { 'race_id': 2, 'race_name': 'China GP (Race)', 'points_by_player': { 'Veerle': 10, 'Bernadette': 4, 'Sven': 9, 'Milan': 4 } }
+                ],
+                'progression': [
+                    { 'race_id': 0, 'race_name': 'Australian GP (Race)', 'cumulative_by_player': { 'Veerle': 2, 'Bernadette': 7, 'Sven': 7, 'Milan': 2 } },
+                    { 'race_id': 1, 'race_name': 'China GP (Sprint)', 'cumulative_by_player': { 'Veerle': 6, 'Bernadette': 11, 'Sven': 7, 'Milan': 6 } },
+                    { 'race_id': 2, 'race_name': 'China GP (Race)', 'cumulative_by_player': { 'Veerle': 16, 'Bernadette': 15, 'Sven': 16, 'Milan': 10 } }
+                ]
+            };
+            initializeDashboard();
+        }
+
+        function initializeDashboard() {
+            populateLeaderboard();
+            createColorCustomizer();
+            createRacesChart();
+            createProgressionChart();
+        }
+
+        function populateLeaderboard() {
+            const tbody = document.getElementById('leaderboardBody');
+            tbody.innerHTML = '';
+
+            dashboardData.leaderboard.forEach((entry, index) => {
+                const row = document.createElement('tr');
+                const rank = index + 1;
+                
+                row.innerHTML = `
+                    <td class="rank">${rank}</td>
+                    <td class="player-name">
+                        <div class="color-dot" style="background-color: ${playerColors[entry.player]}"></div>
+                        ${entry.player}
+                    </td>
+                    <td class="points-total">${entry.total_points}</td>
+                    <td class="points-last">+${entry.last_race_points}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function createColorCustomizer() {
+            const grid = document.getElementById('colorGrid');
+            grid.innerHTML = '';
+
+            dashboardData.players.forEach(player => {
+                const picker = document.createElement('div');
+                picker.className = 'color-picker';
+                picker.innerHTML = `
+                    <label for="color-${player}">${player}</label>
+                    <input type="color" id="color-${player}" value="${playerColors[player]}" onchange="updatePlayerColor('${player}', this.value)">
+                `;
+                grid.appendChild(picker);
+            });
+        }
+
+        function updatePlayerColor(player, color) {
+            playerColors[player] = color;
+            localStorage.setItem('playerColors', JSON.stringify(playerColors));
+            
+            // Update leaderboard
+            populateLeaderboard();
+            
+            // Recreate charts with new colors
+            createRacesChart();
+            createProgressionChart();
+        }
+
+        function resetColors() {
+            playerColors = { ...defaultColors };
+            localStorage.removeItem('playerColors');
+            createColorCustomizer();
+            populateLeaderboard();
+            createRacesChart();
+            createProgressionChart();
+        }
+
+        function createRacesChart() {
+            const ctx = document.getElementById('racesChart').getContext('2d');
+            
+            if (chartsInstances.races) {
+                chartsInstances.races.destroy();
+            }
+
+            const races = dashboardData.races.map(r => r.name);
+            const datasets = [];
+
+            dashboardData.players.forEach(player => {
+                const data = dashboardData.race_points.map(race => 
+                    race.points_by_player[player] || 0
+                );
+                
+                datasets.push({
+                    label: player,
+                    data: data,
+                    backgroundColor: playerColors[player],
+                    borderColor: playerColors[player],
+                    borderWidth: 2,
+                    borderRadius: 8,
+                    borderSkipped: false,
+                    barPercentage: 0.8,
+                    categoryPercentage: 0.7
+                });
+            });
+
+            chartsInstances.races = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: races,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 20,
+                                font: {
+                                    size: 14,
+                                    weight: '600'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 2,
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0,0,0,0.05)',
+                                drawBorder: false
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createProgressionChart() {
+            const ctx = document.getElementById('progressionChart').getContext('2d');
+            
+            if (chartsInstances.progression) {
+                chartsInstances.progression.destroy();
+            }
+
+            const races = dashboardData.progression.map(r => r.race_name);
+            const datasets = [];
+
+            dashboardData.players.forEach(player => {
+                const data = dashboardData.progression.map(race => 
+                    race.cumulative_by_player[player] || 0
+                );
+                
+                datasets.push({
+                    label: player,
+                    data: data,
+                    borderColor: playerColors[player],
+                    backgroundColor: playerColors[player] + '15',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: playerColors[player],
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 8
+                });
+            });
+
+            chartsInstances.progression = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: races,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 20,
+                                font: {
+                                    size: 14,
+                                    weight: '600'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 2,
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0,0,0,0.05)',
+                                drawBorder: false
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize on load
+        loadDashboard();
+    </script>
+</body>
+</html>
