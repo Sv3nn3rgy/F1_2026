@@ -96,6 +96,48 @@ for race_data in race_points_data:
 
 print()
 
+# 4. PREDICTION ACCURACY HEATMAP DATA
+print("PREDICTION ACCURACY HEATMAP:")
+accuracy_heatmap = []
+for _, race in races.iterrows():
+    race_id = race['Race ID']
+    race_name = f"{race['Grand Prix']} ({race['Race Type']})"
+    
+    for player in scoring_df['Player'].unique():
+        player_race = scoring_df[
+            (scoring_df['Player'] == player) &
+            (scoring_df['Grand Prix'] == race['Grand Prix']) &
+            (scoring_df['Race Type'] == race['Race Type'])
+        ]
+        
+        if not player_race.empty:
+            row = player_race.iloc[0]
+            # Count correct predictions (score > 0 for each category)
+            correct_count = 0
+            total_categories = 5  # pole, P1, P2, P3, random
+            
+            if row['Pole Score'] > 0:
+                correct_count += 1
+            if row['P1 Score'] > 0:
+                correct_count += 1
+            if row['P2 Score'] > 0:
+                correct_count += 1
+            if row['P3 Score'] > 0:
+                correct_count += 1
+            if row['Random Score'] > 0:
+                correct_count += 1
+            
+            accuracy = (correct_count / total_categories) * 100
+            accuracy_heatmap.append({
+                'player': player,
+                'race_id': race_id,
+                'race_name': race_name,
+                'accuracy': round(accuracy, 1)
+            })
+            print(f"  {race_name} - {player}: {correct_count}/{total_categories} correct ({accuracy:.1f}%)")
+
+print()
+
 # Save all data as JSON for the dashboard
 dashboard_data = {
     'players': list(scoring_df['Player'].unique()),
@@ -125,7 +167,8 @@ dashboard_data = {
             'cumulative_by_player': p['cumulative_by_player']
         }
         for p in progression_data
-    ]
+    ],
+    'accuracy_heatmap': accuracy_heatmap
 }
 
 # Save to JSON file
@@ -150,3 +193,5 @@ for race_data in race_points_data:
 race_points_df = pd.DataFrame(race_points_export)
 race_points_df.to_csv('race_points_summary.csv', index=False)
 print("Race points summary saved to: race_points_summary.csv")
+
+# %%

@@ -120,5 +120,79 @@
         "Milan": 10
       }
     }
+  ],
+  "accuracy_heatmap": [
+    {
+      "player": "Veerle",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    }
   ]
 }
