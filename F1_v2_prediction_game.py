@@ -13,8 +13,13 @@ logging.getLogger('fastf1').setLevel(logging.WARNING)
 
 # Get race Results
 season_results = []
+
+# check how many rounds and sessions are available for 2026 season in the API and load them
+race_left = len(fastf1.get_events_remaining()) + 1
+race_done = 24 - race_left
+
 # use API to get results for a specific event (e.g., 2026, round 2, Race)
-for round_num in range(1,3):
+for round_num in range(1,race_done):
     for session_type in ['Sprint', 'Race']:
         try:
             print(f"Loading Round {round_num} - {session_type}...")
@@ -26,13 +31,10 @@ for round_num in range(1,3):
             results['RaceType'] = session_type
             season_results.append(results)
        
-
         except:
             continue
 
 season_results_df = pd.concat(season_results, ignore_index=True)
-
-
 
 # Get Player Predictions
 predictions_df = pd.read_csv('Input_Predictions.txt', header=0)
