@@ -1,0 +1,278 @@
+================================================================================
+F1 PREDICTION CHAMPIONSHIP DASHBOARD
+Comprehensive User Guide
+================================================================================
+
+📊 OVERVIEW
+================================================================================
+
+The F1 Prediction Championship Dashboard provides three main visualizations:
+
+1. LEADERBOARD TABLE
+   - Shows player rankings with total points
+   - Displays points from the most recent race
+   - Color-coded player indicators for easy identification
+
+2. POINTS PER RACE BAR CHART
+   - Horizontal grouped bar chart
+   - Shows how many points each player earned per race/sprint
+   - Easily compare performance across events
+   - Color-coordinated by player
+
+3. CUMULATIVE POINTS PROGRESSION LINE CHART
+   - Line graph showing each player's total points over time
+   - Track how standings changed after each race
+   - See player momentum and performance trends
+   - Smooth lines with interactive point markers
+
+
+🎨 CUSTOMIZING PLAYER COLORS
+================================================================================
+
+DEFAULT COLORS:
+- Veerle: Indigo (#6366F1)
+- Sven: Pink (#EC4899)
+- Bernadette: Amber (#F59E0B)
+- Milan: Emerald (#10B981)
+
+HOW TO CHANGE COLORS:
+
+1. Open dashboard.html in your web browser
+2. Find the "Player Colors" section at the top
+3. Click on any color picker (square next to player name)
+4. Choose your preferred color
+5. The dashboard updates immediately
+
+PERSISTENT COLORS:
+- Colors are automatically saved to your browser's local storage
+- Your custom colors will be remembered when you reload the page
+- To reset to defaults, click "Reset to Default" button
+
+EXAMPLE COLOR SCHEMES:
+
+High Contrast:
+- Veerle: #FF6B6B (Red)
+- Sven: #4ECDC4 (Cyan)
+- Bernadette: #FFE66D (Yellow)
+- Milan: #95E1D3 (Mint)
+
+Pastels:
+- Veerle: #C7CEEA (Lavender)
+- Sven: #FFB3BA (Pink)
+- Bernadette: #FFFFBA (Light Yellow)
+- Milan: #BAE1FF (Light Blue)
+
+Dark & Bold:
+- Veerle: #2E0854 (Deep Purple)
+- Sven: #8B0000 (Dark Red)
+- Bernadette: #CC7000 (Dark Orange)
+- Milan: #004D40 (Dark Teal)
+
+
+📁 FILES INCLUDED
+================================================================================
+
+1. dashboard.html (Main Dashboard File)
+   - Self-contained HTML file with all CSS and JavaScript
+   - Open directly in any modern web browser
+   - No server required
+   - Works offline (with embedded fallback data)
+   - Interactive color customizer
+   - Responsive design for mobile and desktop
+
+2. dashboard_data.json (Data File)
+   - Contains all race results and cumulative progression data
+   - Auto-loaded when dashboard.html is opened
+   - Can be updated by running generate_dashboard_data.py
+
+3. generate_dashboard_data.py (Python Data Generator)
+   - Regenerates dashboard_data.json from scoring results
+   - Use this after running race_scoring.py with new predictions
+   - Required input: detailed_scoring.csv
+   - Output: dashboard_data.json
+
+4. Additional Reference Files:
+   - race_points_summary.csv: Simple CSV breakdown by race
+   - detailed_scoring.csv: Detailed scoring breakdown
+   - prediction_report.txt: Text report of all predictions
+   - race_scoring.py: Main scoring algorithm
+
+
+⚙️ UPDATING WITH NEW RACE DATA
+================================================================================
+
+When you have new race predictions and results:
+
+1. Update your CSV files with new predictions and season results
+2. Run the main scoring script:
+   python race_scoring.py
+   
+3. Generate new dashboard data:
+   python generate_dashboard_data.py
+   
+4. Open dashboard.html in your browser to see updated visualizations
+
+The dashboard will automatically load the updated dashboard_data.json file.
+
+
+🌐 OPENING THE DASHBOARD
+================================================================================
+
+Option 1: Direct File Open (Simplest)
+1. Navigate to the outputs folder
+2. Double-click dashboard.html
+3. It opens in your default browser
+
+Option 2: Web Server (For Advanced Users)
+1. Place dashboard.html and dashboard_data.json in a web directory
+2. Serve with any web server (Python, Node.js, Apache, Nginx, etc.)
+3. Access via http://localhost:port
+
+Option 3: Embedding in Website
+- Copy the HTML file and data JSON to your website
+- The dashboard is self-contained and doesn't require external APIs
+- Works on any modern web server
+
+
+📊 UNDERSTANDING THE VISUALIZATIONS
+================================================================================
+
+LEADERBOARD TABLE:
+- Rank: Player's current position
+- Player: Player name with color indicator
+- Total: Cumulative points across all races
+- Last Race: Points earned in the most recent race/sprint
+- The last race column helps identify who's on form
+
+POINTS PER RACE BAR CHART:
+- X-axis: Individual races (labeled with name and type)
+- Y-axis: Points earned (0-15 typical range)
+- Each player has a colored bar per race
+- Bars are grouped by race for easy comparison
+- Hover over bars to see exact values
+- Useful for identifying standout performances
+
+CUMULATIVE PROGRESSION LINE CHART:
+- X-axis: Races in chronological order
+- Y-axis: Total cumulative points
+- Each player has a colored line
+- Points only increase, never decrease
+- Shows overall championship trajectory
+- Points are filled with transparent color for visual impact
+- Markers show exact values at each race
+
+
+🔧 TECHNICAL DETAILS
+================================================================================
+
+Browser Compatibility:
+- Chrome/Chromium 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+Libraries Used:
+- Chart.js 4.4.1 (for data visualization)
+- No other dependencies required
+
+Performance:
+- Loads in under 1 second on typical internet
+- Smooth animations and transitions
+- Responsive to color changes instantly
+- No external API calls required (data is local)
+
+Data Storage:
+- Uses browser's localStorage for color preferences
+- Colors are stored as JSON object
+- Persists across page reloads
+- ~200 bytes of storage used
+
+
+💡 TIPS & TRICKS
+================================================================================
+
+1. Use High Contrast Colors
+   - Makes it easier to distinguish players on charts
+   - Test colors on screens you'll present on
+
+2. Export for Presentations
+   - Take screenshots of the dashboard
+   - Use for leaderboard announcements
+   - Share progress updates with fellow enthusiasts
+
+3. Monitor Momentum
+   - Watch the line chart to see who's gaining points
+   - The slope shows scoring rate
+   - Last race points (in leaderboard) show current form
+
+4. Race Comparison
+   - Use the bar chart to identify which races favor which players
+   - Some may excel in Sprints vs Races
+   - Plan strategies based on historical data
+
+5. Mobile Viewing
+   - Dashboard is responsive and works on mobile
+   - Leaderboard is easier to read on phones
+   - Charts may need landscape orientation for clarity
+
+
+❓ TROUBLESHOOTING
+================================================================================
+
+Dashboard Won't Load:
+- Ensure dashboard.html and dashboard_data.json are in same folder
+- Check browser console for errors (F12 → Console tab)
+- Try clearing browser cache and reloading
+- Try a different browser
+
+Colors Not Saving:
+- Check if browser allows localStorage
+- Disable private/incognito browsing mode
+- Ensure cookies are enabled
+
+Charts Not Displaying:
+- Browser may be blocking JavaScript
+- Check browser security settings
+- Try a different browser
+- Ensure Chart.js library loads (check console)
+
+Data Not Updating:
+- Regenerate data by running: python generate_dashboard_data.py
+- Refresh browser (Ctrl+R or Cmd+R)
+- Clear browser cache completely
+- Ensure JSON file is in the same directory as HTML
+
+Font/Layout Issues:
+- Some older browsers may not render perfectly
+- Update your browser to the latest version
+- Zoom level in browser (Ctrl+0 resets)
+
+
+📞 SUPPORT
+================================================================================
+
+For questions about the dashboard or to report issues:
+
+1. Check that all files are in the correct location
+2. Verify Python scripts run without errors
+3. Test in a different browser
+4. Ensure data files are not corrupted (open JSON in text editor)
+5. Review the scoring algorithm in race_scoring.py
+
+Common Python Errors:
+
+"No module named 'pandas'":
+- Install pandas: pip install pandas
+
+"File not found":
+- Check file paths in Python script
+- Ensure CSV files are in correct directory
+
+"JSON decode error":
+- Verify dashboard_data.json is valid JSON
+- Regenerate using: python generate_dashboard_data.py
+
+
+================================================================================
+End of User Guide
+================================================================================

@@ -1,0 +1,214 @@
+================================================================================
+QUICK START GUIDE - F1 PREDICTION DASHBOARD
+================================================================================
+
+⚡ 30-SECOND SETUP
+================================================================================
+
+1. Locate the "outputs" folder with all generated files
+
+2. Double-click: dashboard.html
+
+3. Your dashboard opens in your browser!
+
+Done! You can now:
+   ✓ View leaderboard
+   ✓ Compare race performance
+   ✓ Track points progression
+   ✓ Customize player colors
+
+
+🎨 QUICK COLOR CUSTOMIZATION
+================================================================================
+
+Already in the dashboard?
+
+1. Find "Player Colors" section at the top
+2. Click color boxes to change player colors
+3. Colors update instantly
+4. Your choices are saved automatically
+
+Want to try new colors? Here are quick presets:
+
+NEON STYLE:
+- Veerle: #00D9FF (Cyan)
+- Sven: #FF006E (Pink)
+- Bernadette: #FFBE0B (Yellow)
+- Milan: #FB5607 (Orange)
+
+CLASSIC F1:
+- Veerle: #0066B2 (Mercedes Blue)
+- Sven: #0082FA (Alpine Blue)
+- Bernadette: #DC0000 (Ferrari Red)
+- Milan: #0AA44E (Aston Martin Green)
+
+
+📈 VIEWING THE THREE CHARTS
+================================================================================
+
+LEADERBOARD (Left side):
+- Shows current standings
+- Rank, total points, and last race points
+- Colored dots show player themes
+
+POINTS PER RACE (Top right):
+- Bar chart of each race
+- See who scored most at each event
+- Compare performance across races
+
+PROGRESSION (Bottom):
+- Line chart showing point accumulation
+- Watch how standings changed over time
+- See trends and momentum
+
+
+🔄 UPDATING WITH NEW RACES
+================================================================================
+
+Have new race data?
+
+1. Update your CSV files with predictions and results
+2. Run: python race_scoring.py
+3. Run: python generate_dashboard_data.py
+4. Refresh dashboard.html in browser
+5. New data appears automatically!
+
+
+📁 FILES YOU NEED
+================================================================================
+
+Essential:
+✓ dashboard.html ← Open this to view dashboard
+✓ dashboard_data.json ← Data file (must be in same folder)
+
+Optional (for updates):
+- race_scoring.py ← Update scores from CSV
+- generate_dashboard_data.py ← Generate new dashboard data
+- *.csv files ← Your prediction data
+
+
+💾 KEEPING YOUR CUSTOM COLORS
+================================================================================
+
+Your color choices are automatically saved!
+
+They persist when you:
+✓ Close and reopen the dashboard
+✓ Refresh the page
+✓ Visit from the same browser/computer
+
+To reset colors:
+- Click "Reset to Default" button in dashboard
+- Or delete browser's localStorage (advanced users)
+
+
+🌐 SHARING YOUR DASHBOARD
+================================================================================
+
+Want to share with others?
+
+Option 1: Email Files
+- Send dashboard.html + dashboard_data.json
+- Recipient opens dashboard.html directly
+- Works offline, no setup needed
+
+Option 2: Upload to Website
+- Upload both files to your web server
+- Send link to others
+- Accessible from any device
+
+Option 3: Screenshot
+- Take a screenshot of dashboard
+- Share as image on social media
+- Quick way to announce standings
+
+
+⚠️ COMMON ISSUES
+================================================================================
+
+"Page won't load"
+→ Make sure dashboard.html and dashboard_data.json are together
+
+"Charts are blank"
+→ Open browser console (F12) and check for errors
+→ Try refreshing the page
+
+"Colors aren't saving"
+→ Disable private/incognito browsing mode
+→ Check that cookies are enabled
+
+"Data is old"
+→ Run: python generate_dashboard_data.py
+→ Refresh browser (Ctrl+R)
+
+
+🚀 ADVANCED: CUSTOMIZING COLORS IN CODE
+================================================================================
+
+Want to edit HTML directly?
+
+Open dashboard.html in a text editor and find:
+
+    const defaultColors = {
+        'Veerle': '#6366F1',
+        'Sven': '#EC4899',
+        'Bernadette': '#F59E0B',
+        'Milan': '#10B981'
+    };
+
+Change hex colors to your preference, save, and refresh browser.
+
+
+📱 MOBILE & TABLET
+================================================================================
+
+Dashboard works on mobile!
+
+Tips:
+- Portrait mode: Leaderboard + top chart visible
+- Landscape mode: Better for line chart
+- Touch-friendly color picker
+- Responsive design adapts to screen size
+
+
+✨ FEATURES AT A GLANCE
+================================================================================
+
+✓ Real-time color customization
+✓ Persistent color preferences
+✓ Responsive design (desktop, tablet, mobile)
+✓ No server required
+✓ Works offline
+✓ Smooth animations
+✓ Professional appearance
+✓ Easy data updates
+✓ Self-contained (no external dependencies)
+✓ Modern chart library (Chart.js)
+
+
+🎓 UNDERSTANDING YOUR COLORS
+================================================================================
+
+Current Assignment:
+- Veerle: Indigo (Professional, cool)
+- Sven: Pink (Energetic, vibrant)
+- Bernadette: Amber (Warm, steady)
+- Milan: Emerald (Fresh, balanced)
+
+When choosing colors:
+- Use colors that are distinct from each other
+- Avoid similar shades (confusing on charts)
+- Test on your actual monitor
+- Consider colorblind viewers (avoid red-green combos)
+
+
+📞 NEED HELP?
+================================================================================
+
+Check DASHBOARD_GUIDE.txt for detailed documentation
+All questions answered there with examples and troubleshooting
+
+
+================================================================================
+You're all set! Enjoy your F1 Prediction Dashboard! 🏁
+================================================================================

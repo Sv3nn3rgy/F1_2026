@@ -1,0 +1,13 @@
+Player,Grand Prix,Race Type,Pole Pred,Pole Actual,Pole Score,P1 Pred,P1 Actual,P1 Score,P2 Pred,P2 Actual,P2 Score,P3 Pred,P3 Actual,P3 Score,Random Driver Pred,Random Pos Pred,Random Actual Pos,Random Score,Total Score
+Veerle,Australian GP,Race,Verstappen,Russell,0,Piastri,Russell,0,Verstappen,Antonelli,0,Russell,Leclerc,2,Verstappen,P2,6,0,2
+Bernadette,Australian GP,Race,Leclerc,Russell,0,Russell,Russell,5,Leclerc,Antonelli,2,Verstappen,Leclerc,0,Verstappen,P3,6,0,7
+Sven,Australian GP,Race,Piastri,Russell,0,Russell,Russell,5,Piastri,Antonelli,0,Antonelli,Leclerc,2,Verstappen,P4,6,0,7
+Milan,Australian GP,Race,Piastri,Russell,0,Leclerc,Russell,2,Verstappen,Antonelli,0,Piastri,Leclerc,0,Verstappen,P2,6,0,2
+Veerle,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Piastri,Hamilton,0,,,,0,4
+Bernadette,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Leclerc,Hamilton,0,,,,0,4
+Sven,China GP,Sprint,Antonelli,Russell,0,Antonelli,Russell,0,Russell,Leclerc,0,Leclerc,Hamilton,0,,,,0,0
+Milan,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Norris,Hamilton,0,,,,0,4
+Veerle,China GP,Race,Russell,Antonelli,0,Antonelli,Antonelli,5,Russell,Russell,5,Leclerc,Hamilton,0,Colapinto,P14,10,0,10
+Bernadette,China GP,Race,Russell,Antonelli,0,Russell,Antonelli,2,Antonelli,Russell,2,Norris,Hamilton,0,Colapinto,P15,10,0,4
+Sven,China GP,Race,Russell,Antonelli,0,Russell,Antonelli,2,Antonelli,Russell,2,Hamilton,Hamilton,5,Colapinto,P16,10,0,9
+Milan,China GP,Race,Russell,Antonelli,0,Russell,Antonelli,2,Antonelli,Russell,2,Leclerc,Hamilton,0,Colapinto,P13,10,0,4
