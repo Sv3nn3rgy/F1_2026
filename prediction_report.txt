@@ -4,14 +4,14 @@ RACE PREDICTION SCORING REPORT
 
 FINAL LEADERBOARD
 --------------------------------------------------------------------------------
-1. Veerle                16 POINTS
-2. Sven                  16 POINTS
-3. Bernadette            15 POINTS
-4. Milan                 10 POINTS
+1. Veerle                23 POINTS
+2. Bernadette            20 POINTS
+3. Sven                  20 POINTS
+4. Milan                 17 POINTS
 
 
 ================================================================================
-VEERLE - TOTAL SCORE: 16 POINTS
+VEERLE - TOTAL SCORE: 23 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -40,8 +40,17 @@ P3 Predicted: Leclerc      	→ Actual: Hamilton      ✗ Incorrect     0 pts
 Predicted: Colapinto P14   → Actual: 10    	 ✗ Incorrect     0 pts
 RACE TOTAL           10 POINTS
 
+Japanese GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P2 Predicted: Antonelli    → Actual: Piastri      • In top 3      2 pts
+P3 Predicted: Leclerc      	→ Actual: Leclerc       ✓ CORRECT       5 pts
+Predicted: Stroll P17   → Actual: 21    	 ✗ Incorrect     0 pts
+RACE TOTAL           7 POINTS
+
 ================================================================================
-BERNADETTE - TOTAL SCORE: 15 POINTS
+BERNADETTE - TOTAL SCORE: 20 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -70,8 +79,17 @@ P3 Predicted: Norris       	→ Actual: Hamilton      ✗ Incorrect     0 pts
 Predicted: Colapinto P15   → Actual: 10    	 ✗ Incorrect     0 pts
 RACE TOTAL           4 POINTS
 
+Japanese GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P2 Predicted: Piastri      → Actual: Piastri      ✓ CORRECT       5 pts
+P3 Predicted: Norris       	→ Actual: Leclerc       ✗ Incorrect     0 pts
+Predicted: Stroll P19   → Actual: 21    	 ✗ Incorrect     0 pts
+RACE TOTAL           5 POINTS
+
 ================================================================================
-SVEN - TOTAL SCORE: 16 POINTS
+SVEN - TOTAL SCORE: 20 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -100,8 +118,17 @@ P3 Predicted: Hamilton     	→ Actual: Hamilton      ✓ CORRECT       5 pts
 Predicted: Colapinto P16   → Actual: 10    	 ✗ Incorrect     0 pts
 RACE TOTAL           9 POINTS
 
+Japanese GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P2 Predicted: Leclerc      → Actual: Piastri      • In top 3      2 pts
+P3 Predicted: Antonelli    	→ Actual: Leclerc       • In top 3      2 pts
+Predicted: Stroll P15   → Actual: 21    	 ✗ Incorrect     0 pts
+RACE TOTAL           4 POINTS
+
 ================================================================================
-MILAN - TOTAL SCORE: 10 POINTS
+MILAN - TOTAL SCORE: 17 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -129,4 +156,13 @@ P2 Predicted: Antonelli    → Actual: Russell      • In top 3      2 pts
 P3 Predicted: Leclerc      	→ Actual: Hamilton      ✗ Incorrect     0 pts
 Predicted: Colapinto P13   → Actual: 10    	 ✗ Incorrect     0 pts
 RACE TOTAL           4 POINTS
+
+Japanese GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Antonelli    ✓ CORRECT       3 pts
+P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P2 Predicted: Antonelli    → Actual: Piastri      • In top 3      2 pts
+P3 Predicted: Piastri      	→ Actual: Leclerc       • In top 3      2 pts
+Predicted: Stroll P18   → Actual: 21    	 ✗ Incorrect     0 pts
+RACE TOTAL           7 POINTS
 

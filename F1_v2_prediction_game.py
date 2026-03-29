@@ -1,4 +1,4 @@
-#%%
+# %%
 import pandas as pd
 import argparse
 import os
@@ -41,7 +41,8 @@ predictions_df = pd.read_csv('Input_Predictions.txt', header=0)
 
 race_name_mapping = {
     'Australian GP': 'Australian Grand Prix',
-    'China GP': 'Chinese Grand Prix'
+    'China GP': 'Chinese Grand Prix',
+    'Japanese GP':'Japanese Grand Prix'
 }
  
 # Create a list to store all scoring records
@@ -281,3 +282,5 @@ with open('prediction_report.txt', 'w', encoding='utf-8') as f:
 print("\nFull report saved to: prediction_report.txt")
 # 
 
+
+# %%

@@ -11,6 +11,9 @@ Veerle,China GP,Race,Russell,Antonelli,Russell,Leclerc,Colapinto,P14
 Bernadette,China GP,Race,Russell,Russell,Antonelli,Norris,Colapinto,P15
 Sven,China GP,Race,Russell,Russell,Antonelli,Hamilton,Colapinto,P16
 Milan,China GP,Race,Russell,Russell,Antonelli,Leclerc,Colapinto,P13
-
+Veerle,Japanese GP,Race,Russell,Russell,Antonelli,Leclerc,Stroll,P17
+Bernadette,Japanese GP,Race,Russell,Russell,Piastri,Norris,Stroll,P19
+Sven,Japanese GP,Race,Russell,Russell,Leclerc,Antonelli,Stroll,P15
+Milan,Japanese GP,Race,Antonelli,Russell,Antonelli,Piastri,Stroll,P18
 
 

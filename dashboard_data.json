@@ -14,26 +14,26 @@
   "leaderboard": [
     {
       "player": "Veerle",
-      "total_points": 16,
-      "last_race_points": 10,
+      "total_points": 23,
+      "last_race_points": 7,
       "color": "#00D9FF"
     },
     {
-      "player": "Sven",
-      "total_points": 16,
-      "last_race_points": 9,
-      "color": "#390BE1"
-    },
-    {
       "player": "Bernadette",
-      "total_points": 15,
-      "last_race_points": 4,
+      "total_points": 20,
+      "last_race_points": 5,
       "color": "#DC0000"
     },
     {
-      "player": "Milan",
-      "total_points": 10,
+      "player": "Sven",
+      "total_points": 20,
       "last_race_points": 4,
+      "color": "#390BE1"
+    },
+    {
+      "player": "Milan",
+      "total_points": 17,
+      "last_race_points": 7,
       "color": "#0AA44E"
     }
   ],
@@ -54,6 +54,12 @@
       "id": 2,
       "name": "China GP (Race)",
       "grand_prix": "China GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 3,
+      "name": "Japanese GP (Race)",
+      "grand_prix": "Japanese GP",
       "race_type": "Race"
     }
   ],
@@ -87,6 +93,16 @@
         "Sven": 9,
         "Milan": 4
       }
+    },
+    {
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "points_by_player": {
+        "Veerle": 7,
+        "Bernadette": 5,
+        "Sven": 4,
+        "Milan": 7
+      }
     }
   ],
   "progression": [
@@ -118,6 +134,16 @@
         "Bernadette": 15,
         "Sven": 16,
         "Milan": 10
+      }
+    },
+    {
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 23,
+        "Bernadette": 20,
+        "Sven": 20,
+        "Milan": 17
       }
     }
   ],
@@ -193,6 +219,30 @@
       "race_id": 2,
       "race_name": "China GP (Race)",
       "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 60.0
     }
   ]
 }
