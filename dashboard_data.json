@@ -13,27 +13,27 @@
   },
   "leaderboard": [
     {
-      "player": "Veerle",
+      "player": "Sven",
       "total_points": 23,
-      "last_race_points": 7,
+      "last_race_points": 3,
+      "color": "#390BE1"
+    },
+    {
+      "player": "Veerle",
+      "total_points": 22,
+      "last_race_points": 3,
       "color": "#00D9FF"
     },
     {
       "player": "Bernadette",
-      "total_points": 20,
-      "last_race_points": 5,
+      "total_points": 19,
+      "last_race_points": 3,
       "color": "#DC0000"
     },
     {
-      "player": "Sven",
-      "total_points": 20,
-      "last_race_points": 4,
-      "color": "#390BE1"
-    },
-    {
       "player": "Milan",
-      "total_points": 17,
-      "last_race_points": 7,
+      "total_points": 13,
+      "last_race_points": 0,
       "color": "#0AA44E"
     }
   ],
@@ -46,21 +46,21 @@
     },
     {
       "id": 1,
-      "name": "China GP (Sprint)",
-      "grand_prix": "China GP",
-      "race_type": "Sprint"
-    },
-    {
-      "id": 2,
       "name": "China GP (Race)",
       "grand_prix": "China GP",
       "race_type": "Race"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Japanese GP (Race)",
       "grand_prix": "Japanese GP",
       "race_type": "Race"
+    },
+    {
+      "id": 3,
+      "name": "Miami Grand Prix (Sprint)",
+      "grand_prix": "Miami Grand Prix",
+      "race_type": "Sprint"
     }
   ],
   "race_points": [
@@ -76,16 +76,6 @@
     },
     {
       "race_id": 1,
-      "race_name": "China GP (Sprint)",
-      "points_by_player": {
-        "Veerle": 4,
-        "Bernadette": 4,
-        "Sven": 0,
-        "Milan": 4
-      }
-    },
-    {
-      "race_id": 2,
       "race_name": "China GP (Race)",
       "points_by_player": {
         "Veerle": 10,
@@ -95,13 +85,23 @@
       }
     },
     {
-      "race_id": 3,
+      "race_id": 2,
       "race_name": "Japanese GP (Race)",
       "points_by_player": {
         "Veerle": 7,
         "Bernadette": 5,
         "Sven": 4,
         "Milan": 7
+      }
+    },
+    {
+      "race_id": 3,
+      "race_name": "Miami Grand Prix (Sprint)",
+      "points_by_player": {
+        "Veerle": 3,
+        "Bernadette": 3,
+        "Sven": 3,
+        "Milan": 0
       }
     }
   ],
@@ -118,32 +118,32 @@
     },
     {
       "race_id": 1,
-      "race_name": "China GP (Sprint)",
+      "race_name": "China GP (Race)",
       "cumulative_by_player": {
-        "Veerle": 6,
+        "Veerle": 12,
         "Bernadette": 11,
-        "Sven": 7,
+        "Sven": 16,
         "Milan": 6
       }
     },
     {
       "race_id": 2,
-      "race_name": "China GP (Race)",
+      "race_name": "Japanese GP (Race)",
       "cumulative_by_player": {
-        "Veerle": 16,
-        "Bernadette": 15,
-        "Sven": 16,
-        "Milan": 10
+        "Veerle": 19,
+        "Bernadette": 16,
+        "Sven": 20,
+        "Milan": 13
       }
     },
     {
       "race_id": 3,
-      "race_name": "Japanese GP (Race)",
+      "race_name": "Miami Grand Prix (Sprint)",
       "cumulative_by_player": {
-        "Veerle": 23,
-        "Bernadette": 20,
-        "Sven": 20,
-        "Milan": 17
+        "Veerle": 22,
+        "Bernadette": 19,
+        "Sven": 23,
+        "Milan": 13
       }
     }
   ],
@@ -175,74 +175,74 @@
     {
       "player": "Veerle",
       "race_id": 1,
-      "race_name": "China GP (Sprint)",
-      "accuracy": 40.0
-    },
-    {
-      "player": "Bernadette",
-      "race_id": 1,
-      "race_name": "China GP (Sprint)",
-      "accuracy": 40.0
-    },
-    {
-      "player": "Sven",
-      "race_id": 1,
-      "race_name": "China GP (Sprint)",
-      "accuracy": 0.0
-    },
-    {
-      "player": "Milan",
-      "race_id": 1,
-      "race_name": "China GP (Sprint)",
-      "accuracy": 40.0
-    },
-    {
-      "player": "Veerle",
-      "race_id": 2,
       "race_name": "China GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Bernadette",
-      "race_id": 2,
+      "race_id": 1,
       "race_name": "China GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Sven",
-      "race_id": 2,
+      "race_id": 1,
       "race_name": "China GP (Race)",
       "accuracy": 60.0
     },
     {
       "player": "Milan",
-      "race_id": 2,
+      "race_id": 1,
       "race_name": "China GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Veerle",
-      "race_id": 3,
+      "race_id": 2,
       "race_name": "Japanese GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Bernadette",
-      "race_id": 3,
+      "race_id": 2,
       "race_name": "Japanese GP (Race)",
       "accuracy": 20.0
     },
     {
       "player": "Sven",
-      "race_id": 3,
+      "race_id": 2,
       "race_name": "Japanese GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Milan",
-      "race_id": 3,
+      "race_id": 2,
       "race_name": "Japanese GP (Race)",
       "accuracy": 60.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 3,
+      "race_name": "Miami Grand Prix (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 3,
+      "race_name": "Miami Grand Prix (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 3,
+      "race_name": "Miami Grand Prix (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 3,
+      "race_name": "Miami Grand Prix (Sprint)",
+      "accuracy": 0.0
     }
   ]
 }

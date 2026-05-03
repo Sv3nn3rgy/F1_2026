@@ -15,5 +15,19 @@ Veerle,Japanese GP,Race,Russell,Russell,Antonelli,Leclerc,Stroll,P17
 Bernadette,Japanese GP,Race,Russell,Russell,Piastri,Norris,Stroll,P19
 Sven,Japanese GP,Race,Russell,Russell,Leclerc,Antonelli,Stroll,P15
 Milan,Japanese GP,Race,Antonelli,Russell,Antonelli,Piastri,Stroll,P18
-
-
+Veerle,Miami Grand Prix,Sprint,Antonelli,Antonelli,Russell,Leclerc
+Veerle,Miami Grand Prix,Race,Russell,Antonelli,Leclerc,Russell,Perez,P18
+Bernadette,Miami Grand Prix,Sprint,Leclerc,Norris,Leclerc,Verstappen
+Bernadette,Miami Grand Prix,Race,Piastri,Piastri,Verstappen,Antonelli,Perez,P20
+Sven,Miami Grand Prix,Sprint,Leclerc,Leclerc,Piastri,Russell
+Sven,Miami Grand Prix,Race,Leclerc,Leclerc,Russell,Antonelli,Perez,P18
+Milan,Miami Grand Prix,Sprint,Antonelli,Antonelli,Leclerc,Hamilton
+Milan,Miami Grand Prix,Race,Antonelli,Russell,Leclerc,Antonelli,Perez,P19
+Veerle,Miami GP,Sprint,Antonelli,Antonelli,Russell,Leclerc
+Veerle,Miami GP,Race,Russell,Antonelli,Leclerc,Russell,Perez,P18
+Bernadette,Miami GP,Sprint,Leclerc,Norris,Leclerc,Verstappen
+Bernadette,Miami GP,Race,Piastri,Piastri,Verstappen,Antonelli,Perez,P20
+Sven,Miami GP,Sprint,Leclerc,Leclerc,Piastri,Russell
+Sven,Miami GP,Race,Leclerc,Leclerc,Russell,Antonelli,Perez,P18
+Milan,Miami GP,Sprint,Antonelli,Antonelli,Leclerc,Hamilton
+Milan,Miami GP,Race,Antonelli,Russell,Leclerc,Antonelli,Perez,P19

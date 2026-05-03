@@ -3,10 +3,6 @@ Veerle,Australian GP,Race,Verstappen,Russell,0,Piastri,Russell,0,Verstappen,Anto
 Bernadette,Australian GP,Race,Leclerc,Russell,0,Russell,Russell,5,Leclerc,Antonelli,2,Verstappen,Leclerc,0,Verstappen,P3,6,0,7
 Sven,Australian GP,Race,Piastri,Russell,0,Russell,Russell,5,Piastri,Antonelli,0,Antonelli,Leclerc,2,Verstappen,P4,6,0,7
 Milan,Australian GP,Race,Piastri,Russell,0,Leclerc,Russell,2,Verstappen,Antonelli,0,Piastri,Leclerc,0,Verstappen,P2,6,0,2
-Veerle,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Piastri,Hamilton,0,,,,0,4
-Bernadette,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Leclerc,Hamilton,0,,,,0,4
-Sven,China GP,Sprint,Antonelli,Russell,0,Antonelli,Russell,0,Russell,Leclerc,0,Leclerc,Hamilton,0,,,,0,0
-Milan,China GP,Sprint,Russell,Russell,1,Russell,Russell,3,Antonelli,Leclerc,0,Norris,Hamilton,0,,,,0,4
 Veerle,China GP,Race,Russell,Antonelli,0,Antonelli,Antonelli,5,Russell,Russell,5,Leclerc,Hamilton,0,Colapinto,P14,10,0,10
 Bernadette,China GP,Race,Russell,Antonelli,0,Russell,Antonelli,2,Antonelli,Russell,2,Norris,Hamilton,0,Colapinto,P15,10,0,4
 Sven,China GP,Race,Russell,Antonelli,0,Russell,Antonelli,2,Antonelli,Russell,2,Hamilton,Hamilton,5,Colapinto,P16,10,0,9
@@ -15,3 +11,7 @@ Veerle,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Antonelli,Piastr
 Bernadette,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Piastri,Piastri,5,Norris,Leclerc,0,Stroll,P19,21,0,5
 Sven,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Leclerc,Piastri,2,Antonelli,Leclerc,2,Stroll,P15,21,0,4
 Milan,Japanese GP,Race,Antonelli,Antonelli,3,Russell,Antonelli,0,Antonelli,Piastri,2,Piastri,Leclerc,2,Stroll,P18,21,0,7
+Veerle,Miami Grand Prix,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Russell,Piastri,0,Leclerc,Leclerc,3,,,,0,3
+Bernadette,Miami Grand Prix,Sprint,Leclerc,Norris,0,Norris,Norris,3,Leclerc,Piastri,0,Verstappen,Leclerc,0,,,,0,3
+Sven,Miami Grand Prix,Sprint,Leclerc,Norris,0,Leclerc,Norris,0,Piastri,Piastri,3,Russell,Leclerc,0,,,,0,3
+Milan,Miami Grand Prix,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Leclerc,Piastri,0,Hamilton,Leclerc,0,,,,0,0
