@@ -32,8 +32,8 @@
     },
     {
       "player": "Milan",
-      "total_points": 19,
-      "last_race_points": 2,
+      "total_points": 22,
+      "last_race_points": 5,
       "color": "#0AA44E"
     }
   ],
@@ -133,7 +133,7 @@
         "Veerle": 5,
         "Bernadette": 4,
         "Sven": 2,
-        "Milan": 2
+        "Milan": 5
       }
     }
   ],
@@ -195,7 +195,7 @@
         "Veerle": 31,
         "Bernadette": 27,
         "Sven": 25,
-        "Milan": 19
+        "Milan": 22
       }
     }
   ],
@@ -342,7 +342,7 @@
       "player": "Milan",
       "race_id": 5,
       "race_name": "Miami Grand Prix (Race)",
-      "accuracy": 20.0
+      "accuracy": 40.0
     }
   ]
 }

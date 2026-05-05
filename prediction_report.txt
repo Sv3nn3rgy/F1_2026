@@ -7,7 +7,7 @@ FINAL LEADERBOARD
 1. Veerle                31 POINTS
 2. Bernadette            27 POINTS
 3. Sven                  25 POINTS
-4. Milan                 19 POINTS
+4. Milan                 22 POINTS
 
 
 ================================================================================
@@ -59,7 +59,7 @@ RACE TOTAL           3 POINTS
 
 Miami Grand Prix (Race)
 --------------------------------------------------------------------------------
-Pole Position: Russell      → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
 P1 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
 P2 Predicted: Leclerc      → Actual: Norris       ✗ Incorrect     0 pts
 P3 Predicted: Russell      	→ Actual: Piastri       ✗ Incorrect     0 pts
@@ -115,7 +115,7 @@ RACE TOTAL           3 POINTS
 
 Miami Grand Prix (Race)
 --------------------------------------------------------------------------------
-Pole Position: Piastri      → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Piastri      → Actual: Antonelli    ✗ Incorrect     0 pts
 P1 Predicted: Piastri      → Actual: Antonelli    • In top 3      2 pts
 P2 Predicted: Verstappen   → Actual: Norris       ✗ Incorrect     0 pts
 P3 Predicted: Antonelli    	→ Actual: Piastri       • In top 3      2 pts
@@ -171,7 +171,7 @@ RACE TOTAL           3 POINTS
 
 Miami Grand Prix (Race)
 --------------------------------------------------------------------------------
-Pole Position: Leclerc      → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Leclerc      → Actual: Antonelli    ✗ Incorrect     0 pts
 P1 Predicted: Leclerc      → Actual: Antonelli    ✗ Incorrect     0 pts
 P2 Predicted: Russell      → Actual: Norris       ✗ Incorrect     0 pts
 P3 Predicted: Antonelli    	→ Actual: Piastri       • In top 3      2 pts
@@ -179,7 +179,7 @@ Predicted: Perez  P18   → Actual: 16    	 ✗ Incorrect     0 pts
 RACE TOTAL           2 POINTS
 
 ================================================================================
-MILAN - TOTAL SCORE: 19 POINTS
+MILAN - TOTAL SCORE: 22 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -227,10 +227,10 @@ RACE TOTAL           0 POINTS
 
 Miami Grand Prix (Race)
 --------------------------------------------------------------------------------
-Pole Position: Antonelli    → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Antonelli    → Actual: Antonelli    ✓ CORRECT       3 pts
 P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
 P2 Predicted: Leclerc      → Actual: Norris       ✗ Incorrect     0 pts
 P3 Predicted: Antonelli    	→ Actual: Piastri       • In top 3      2 pts
 Predicted: Perez  P19   → Actual: 16    	 ✗ Incorrect     0 pts
-RACE TOTAL           2 POINTS
+RACE TOTAL           5 POINTS
 
