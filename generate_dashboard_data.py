@@ -176,6 +176,16 @@ with open('dashboard_data.json', 'w') as f:
     json.dump(dashboard_data, f, indent=2)
 
 print("Dashboard data saved to: dashboard_data.json")
+
+# Also save as a JS file so the dashboard works when opened directly via
+# file:// (double-click in Explorer), where fetch() of a .json is blocked.
+# A <script> tag is not subject to that restriction.
+with open('dashboard_data.js', 'w', encoding='utf-8') as f:
+    f.write('window.DASHBOARD_DATA = ')
+    json.dump(dashboard_data, f, indent=2)
+    f.write(';\n')
+
+print("Dashboard data saved to: dashboard_data.js")
 print()
 
 # Also create a simple CSV for reference

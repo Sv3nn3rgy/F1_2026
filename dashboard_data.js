@@ -1,0 +1,548 @@
+window.DASHBOARD_DATA = {
+  "players": [
+    "Veerle",
+    "Bernadette",
+    "Sven",
+    "Milan"
+  ],
+  "player_colors": {
+    "Veerle": "#00D9FF",
+    "Sven": "#390BE1",
+    "Bernadette": "#DC0000",
+    "Milan": "#0AA44E"
+  },
+  "leaderboard": [
+    {
+      "player": "Sven",
+      "total_points": 48,
+      "last_race_points": 10,
+      "color": "#390BE1"
+    },
+    {
+      "player": "Bernadette",
+      "total_points": 45,
+      "last_race_points": 5,
+      "color": "#DC0000"
+    },
+    {
+      "player": "Veerle",
+      "total_points": 43,
+      "last_race_points": 5,
+      "color": "#00D9FF"
+    },
+    {
+      "player": "Milan",
+      "total_points": 34,
+      "last_race_points": 5,
+      "color": "#0AA44E"
+    }
+  ],
+  "races": [
+    {
+      "id": 0,
+      "name": "Australian GP (Race)",
+      "grand_prix": "Australian GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 1,
+      "name": "China GP (Sprint)",
+      "grand_prix": "China GP",
+      "race_type": "Sprint"
+    },
+    {
+      "id": 2,
+      "name": "China GP (Race)",
+      "grand_prix": "China GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 3,
+      "name": "Japanese GP (Race)",
+      "grand_prix": "Japanese GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 4,
+      "name": "Miami GP (Sprint)",
+      "grand_prix": "Miami GP",
+      "race_type": "Sprint"
+    },
+    {
+      "id": 5,
+      "name": "Miami GP (Race)",
+      "grand_prix": "Miami GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 6,
+      "name": "Canada GP (Sprint)",
+      "grand_prix": "Canada GP",
+      "race_type": "Sprint"
+    },
+    {
+      "id": 7,
+      "name": "Canada GP (Race)",
+      "grand_prix": "Canada GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 8,
+      "name": "Monaco GP (Race)",
+      "grand_prix": "Monaco GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 9,
+      "name": "Barcelona GP (Race)",
+      "grand_prix": "Barcelona GP",
+      "race_type": "Race"
+    }
+  ],
+  "race_points": [
+    {
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "points_by_player": {
+        "Veerle": 2,
+        "Bernadette": 7,
+        "Sven": 7,
+        "Milan": 2
+      }
+    },
+    {
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "points_by_player": {
+        "Veerle": 4,
+        "Bernadette": 4,
+        "Sven": 0,
+        "Milan": 4
+      }
+    },
+    {
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "points_by_player": {
+        "Veerle": 10,
+        "Bernadette": 4,
+        "Sven": 9,
+        "Milan": 4
+      }
+    },
+    {
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "points_by_player": {
+        "Veerle": 7,
+        "Bernadette": 5,
+        "Sven": 4,
+        "Milan": 7
+      }
+    },
+    {
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "points_by_player": {
+        "Veerle": 3,
+        "Bernadette": 3,
+        "Sven": 3,
+        "Milan": 0
+      }
+    },
+    {
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "points_by_player": {
+        "Veerle": 5,
+        "Bernadette": 4,
+        "Sven": 2,
+        "Milan": 5
+      }
+    },
+    {
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "points_by_player": {
+        "Veerle": 0,
+        "Bernadette": 3,
+        "Sven": 3,
+        "Milan": 0
+      }
+    },
+    {
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "points_by_player": {
+        "Veerle": 5,
+        "Bernadette": 5,
+        "Sven": 8,
+        "Milan": 5
+      }
+    },
+    {
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "points_by_player": {
+        "Veerle": 2,
+        "Bernadette": 5,
+        "Sven": 2,
+        "Milan": 2
+      }
+    },
+    {
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "points_by_player": {
+        "Veerle": 5,
+        "Bernadette": 5,
+        "Sven": 10,
+        "Milan": 5
+      }
+    }
+  ],
+  "progression": [
+    {
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 2,
+        "Bernadette": 7,
+        "Sven": 7,
+        "Milan": 2
+      }
+    },
+    {
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "cumulative_by_player": {
+        "Veerle": 6,
+        "Bernadette": 11,
+        "Sven": 7,
+        "Milan": 6
+      }
+    },
+    {
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 16,
+        "Bernadette": 15,
+        "Sven": 16,
+        "Milan": 10
+      }
+    },
+    {
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 23,
+        "Bernadette": 20,
+        "Sven": 20,
+        "Milan": 17
+      }
+    },
+    {
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "cumulative_by_player": {
+        "Veerle": 26,
+        "Bernadette": 23,
+        "Sven": 23,
+        "Milan": 17
+      }
+    },
+    {
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 31,
+        "Bernadette": 27,
+        "Sven": 25,
+        "Milan": 22
+      }
+    },
+    {
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "cumulative_by_player": {
+        "Veerle": 31,
+        "Bernadette": 30,
+        "Sven": 28,
+        "Milan": 22
+      }
+    },
+    {
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 36,
+        "Bernadette": 35,
+        "Sven": 36,
+        "Milan": 27
+      }
+    },
+    {
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 38,
+        "Bernadette": 40,
+        "Sven": 38,
+        "Milan": 29
+      }
+    },
+    {
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 43,
+        "Bernadette": 45,
+        "Sven": 48,
+        "Milan": 34
+      }
+    }
+  ],
+  "accuracy_heatmap": [
+    {
+      "player": "Veerle",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 0,
+      "race_name": "Australian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 1,
+      "race_name": "China GP (Sprint)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 2,
+      "race_name": "China GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 3,
+      "race_name": "Japanese GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 4,
+      "race_name": "Miami GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 5,
+      "race_name": "Miami GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 6,
+      "race_name": "Canada GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 7,
+      "race_name": "Canada GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 8,
+      "race_name": "Monaco GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 9,
+      "race_name": "Barcelona GP (Race)",
+      "accuracy": 40.0
+    }
+  ]
+};
