@@ -15,11 +15,27 @@ Veerle,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Antonelli,Piastr
 Bernadette,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Piastri,Piastri,5,Norris,Leclerc,0,Stroll,P19,21,0,5
 Sven,Japanese GP,Race,Russell,Antonelli,0,Russell,Antonelli,0,Leclerc,Piastri,2,Antonelli,Leclerc,2,Stroll,P15,21,0,4
 Milan,Japanese GP,Race,Antonelli,Antonelli,3,Russell,Antonelli,0,Antonelli,Piastri,2,Piastri,Leclerc,2,Stroll,P18,21,0,7
-Veerle,Miami Grand Prix,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Russell,Piastri,0,Leclerc,Leclerc,3,,,,0,3
-Veerle,Miami Grand Prix,Race,Russell,Antonelli,0,Antonelli,Antonelli,5,Leclerc,Norris,0,Russell,Piastri,0,Perez,P18,16,0,5
-Bernadette,Miami Grand Prix,Sprint,Leclerc,Norris,0,Norris,Norris,3,Leclerc,Piastri,0,Verstappen,Leclerc,0,,,,0,3
-Bernadette,Miami Grand Prix,Race,Piastri,Antonelli,0,Piastri,Antonelli,2,Verstappen,Norris,0,Antonelli,Piastri,2,Perez,P20,16,0,4
-Sven,Miami Grand Prix,Sprint,Leclerc,Norris,0,Leclerc,Norris,0,Piastri,Piastri,3,Russell,Leclerc,0,,,,0,3
-Sven,Miami Grand Prix,Race,Leclerc,Antonelli,0,Leclerc,Antonelli,0,Russell,Norris,0,Antonelli,Piastri,2,Perez,P18,16,0,2
-Milan,Miami Grand Prix,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Leclerc,Piastri,0,Hamilton,Leclerc,0,,,,0,0
-Milan,Miami Grand Prix,Race,Antonelli,Antonelli,3,Russell,Antonelli,0,Leclerc,Norris,0,Antonelli,Piastri,2,Perez,P19,16,0,5
+Veerle,Miami GP,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Russell,Piastri,0,Leclerc,Leclerc,3,,,,0,3
+Veerle,Miami GP,Race,Russell,Antonelli,0,Antonelli,Antonelli,5,Leclerc,Norris,0,Russell,Piastri,0,Perez,P18,16,0,5
+Bernadette,Miami GP,Sprint,Leclerc,Norris,0,Norris,Norris,3,Leclerc,Piastri,0,Verstappen,Leclerc,0,,,,0,3
+Bernadette,Miami GP,Race,Piastri,Antonelli,0,Piastri,Antonelli,2,Verstappen,Norris,0,Antonelli,Piastri,2,Perez,P20,16,0,4
+Sven,Miami GP,Sprint,Leclerc,Norris,0,Leclerc,Norris,0,Piastri,Piastri,3,Russell,Leclerc,0,,,,0,3
+Sven,Miami GP,Race,Leclerc,Antonelli,0,Leclerc,Antonelli,0,Russell,Norris,0,Antonelli,Piastri,2,Perez,P18,16,0,2
+Milan,Miami GP,Sprint,Antonelli,Norris,0,Antonelli,Norris,0,Leclerc,Piastri,0,Hamilton,Leclerc,0,,,,0,0
+Milan,Miami GP,Race,Antonelli,Antonelli,3,Russell,Antonelli,0,Leclerc,Norris,0,Antonelli,Piastri,2,Perez,P19,16,0,5
+Veerle,Canada GP,Sprint,,Russell,0,Antonelli,Russell,0,Russell,Norris,0,Leclerc,Antonelli,0,,,,0,0
+Veerle,Canada GP,Race,Antonelli,Russell,0,Antonelli,Antonelli,5,Leclerc,Hamilton,0,Norris,Verstappen,0,Alonso,P17,20,0,5
+Bernadette,Canada GP,Sprint,,Russell,0,Russell,Russell,3,Antonelli,Norris,0,Norris,Antonelli,0,,,,0,3
+Bernadette,Canada GP,Race,Antonelli,Russell,0,Antonelli,Antonelli,5,Russell,Hamilton,0,Piastri,Verstappen,0,Alonso,P16,20,0,5
+Sven,Canada GP,Sprint,,Russell,0,Russell,Russell,3,Hamilton,Norris,0,Norris,Antonelli,0,,,,0,3
+Sven,Canada GP,Race,Russell,Russell,3,Antonelli,Antonelli,5,Russell,Hamilton,0,Norris,Verstappen,0,Alonso,P18,20,0,8
+Milan,Canada GP,Sprint,,Russell,0,Antonelli,Russell,0,Hamilton,Norris,0,Russell,Antonelli,0,,,,0,0
+Milan,Canada GP,Race,Russell,Russell,3,Russell,Antonelli,0,Antonelli,Hamilton,2,Norris,Verstappen,0,Alonso,P21,20,0,5
+Veerle,Monaco GP,Race,Leclerc,Antonelli,0,Leclerc,Antonelli,0,Antonelli,Hamilton,2,Verstappen,Gasly,0,Bottas,P16,21,0,2
+Bernadette,Monaco GP,Race,Leclerc,Antonelli,0,Leclerc,Antonelli,0,Verstappen,Hamilton,0,Hamilton,Gasly,2,Bottas,P21,21,3,5
+Sven,Monaco GP,Race,Hamilton,Antonelli,0,Hamilton,Antonelli,2,Leclerc,Hamilton,0,Verstappen,Gasly,0,Bottas,P20,21,0,2
+Milan,Monaco GP,Race,Leclerc,Antonelli,0,Verstappen,Antonelli,0,Leclerc,Hamilton,0,Hamilton,Gasly,2,Bottas,P19,21,0,2
+Veerle,Barcelona GP,Race,Antonelli,Russell,0,Antonelli,Hamilton,0,Russell,Russell,5,Verstappen,Norris,0,Hulkenberg,P16,20,0,5
+Bernadette,Barcelona GP,Race,Russell,Russell,3,Russell,Hamilton,2,Piastri,Russell,0,Antonelli,Norris,0,Hulkenberg,P11,20,0,5
+Sven,Barcelona GP,Race,Antonelli,Russell,0,Antonelli,Hamilton,0,Russell,Russell,5,Norris,Norris,5,Hulkenberg,P16,20,0,10
+Milan,Barcelona GP,Race,Russell,Russell,3,Russell,Hamilton,2,Antonelli,Russell,0,Piastri,Norris,0,Hulkenberg,P12,20,0,5

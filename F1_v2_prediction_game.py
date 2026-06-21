@@ -2,11 +2,28 @@
 import pandas as pd
 import argparse
 import os
+import sys
+
+# Console on Windows defaults to cp1252, which can't encode the report's
+# arrow/checkmark glyphs. Force UTF-8 so printing the report doesn't crash.
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, ValueError):
+    pass
 
 import requests
 import numpy as np
 import re
+import unicodedata
 import fastf1
+
+
+def strip_accents(value):
+    """Normalize a driver name to plain ASCII so accented FastF1 names
+    (e.g. 'Pérez', 'Hülkenberg') match the ASCII predictions."""
+    if not isinstance(value, str):
+        return value
+    return unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
 import logging
 # Suppress FastF1 verbose output
 logging.getLogger('fastf1').setLevel(logging.WARNING)
@@ -42,7 +59,12 @@ predictions_df = pd.read_csv('Input_Predictions.txt', header=0)
 race_name_mapping = {
     'Australian GP': 'Australian Grand Prix',
     'China GP': 'Chinese Grand Prix',
-    'Japanese GP':'Japanese Grand Prix'
+    'Japanese GP': 'Japanese Grand Prix',
+    'Miami GP': 'Miami Grand Prix',
+    'Canada GP': 'Canadian Grand Prix',
+    'Monaco GP': 'Monaco Grand Prix',
+    'Barcelona GP': 'Barcelona Grand Prix',
+    'Spanish GP': 'Spanish Grand Prix',
 }
  
 # Create a list to store all scoring records
@@ -74,7 +96,10 @@ for idx, pred_row in predictions_df.iterrows():
     if race_results.empty:
         print(f"Warning: No results found for {grand_prix} {race_type} for {player_name}")
         continue
-    
+
+    # Strip accents so names like 'Pérez'/'Hülkenberg' match ASCII predictions
+    race_results['LastName'] = race_results['LastName'].map(strip_accents)
+
     # Sort by actual position to get the finishing order
     race_results_sorted = race_results.sort_values('Position').reset_index(drop=True)
     

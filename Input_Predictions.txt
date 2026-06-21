@@ -15,14 +15,6 @@ Veerle,Japanese GP,Race,Russell,Russell,Antonelli,Leclerc,Stroll,P17
 Bernadette,Japanese GP,Race,Russell,Russell,Piastri,Norris,Stroll,P19
 Sven,Japanese GP,Race,Russell,Russell,Leclerc,Antonelli,Stroll,P15
 Milan,Japanese GP,Race,Antonelli,Russell,Antonelli,Piastri,Stroll,P18
-Veerle,Miami Grand Prix,Sprint,Antonelli,Antonelli,Russell,Leclerc
-Veerle,Miami Grand Prix,Race,Russell,Antonelli,Leclerc,Russell,Perez,P18
-Bernadette,Miami Grand Prix,Sprint,Leclerc,Norris,Leclerc,Verstappen
-Bernadette,Miami Grand Prix,Race,Piastri,Piastri,Verstappen,Antonelli,Perez,P20
-Sven,Miami Grand Prix,Sprint,Leclerc,Leclerc,Piastri,Russell
-Sven,Miami Grand Prix,Race,Leclerc,Leclerc,Russell,Antonelli,Perez,P18
-Milan,Miami Grand Prix,Sprint,Antonelli,Antonelli,Leclerc,Hamilton
-Milan,Miami Grand Prix,Race,Antonelli,Russell,Leclerc,Antonelli,Perez,P19
 Veerle,Miami GP,Sprint,Antonelli,Antonelli,Russell,Leclerc
 Veerle,Miami GP,Race,Russell,Antonelli,Leclerc,Russell,Perez,P18
 Bernadette,Miami GP,Sprint,Leclerc,Norris,Leclerc,Verstappen
@@ -31,3 +23,19 @@ Sven,Miami GP,Sprint,Leclerc,Leclerc,Piastri,Russell
 Sven,Miami GP,Race,Leclerc,Leclerc,Russell,Antonelli,Perez,P18
 Milan,Miami GP,Sprint,Antonelli,Antonelli,Leclerc,Hamilton
 Milan,Miami GP,Race,Antonelli,Russell,Leclerc,Antonelli,Perez,P19
+Veerle,Canada GP,Sprint,,Antonelli,Russell,Leclerc
+Veerle,Canada GP,Race,Antonelli,Antonelli,Leclerc,Norris,Alonso,P17
+Bernadette,Canada GP,Sprint,,Russell,Antonelli,Norris
+Bernadette,Canada GP,Race,Antonelli,Antonelli,Russell,Piastri,Alonso,P16
+Sven,Canada GP,Sprint,,Russell,Hamilton,Norris
+Sven,Canada GP,Race,Russell,Antonelli,Russell,Norris,Alonso,P18
+Milan,Canada GP,Sprint,,Antonelli,Hamilton,Russell
+Milan,Canada GP,Race,Russell,Russell,Antonelli,Norris,Alonso,P21
+Veerle,Monaco GP,Race,Leclerc,Leclerc,Antonelli,Verstappen,Bottas,P16
+Bernadette,Monaco GP,Race,Leclerc,Leclerc,Verstappen,Hamilton,Bottas,P21
+Sven,Monaco GP,Race,Hamilton,Hamilton,Leclerc,Verstappen,Bottas,P20
+Milan,Monaco GP,Race,Leclerc,Verstappen,Leclerc,Hamilton,Bottas,P19
+Veerle,Barcelona GP,Race,Antonelli,Antonelli,Russell,Verstappen,Hulkenberg,P16
+Bernadette,Barcelona GP,Race,Russell,Russell,Piastri,Antonelli,Hulkenberg,P11
+Sven,Barcelona GP,Race,Antonelli,Antonelli,Russell,Norris,Hulkenberg,P16
+Milan,Barcelona GP,Race,Russell,Russell,Antonelli,Piastri,Hulkenberg,P12
