@@ -7,11 +7,43 @@ scoring_df = pd.read_csv('detailed_scoring.csv')
 
 # Define color palette for players (can be easily adjusted)
 player_colors = {
-    'Veerle': "#00D9FF",      
-    'Sven': "#390BE1",        
-    'Bernadette': "#DC0000",  
-    'Milan': "#0AA44E"        
+    'Veerle': "#00D9FF",
+    'Sven': "#390BE1",
+    'Bernadette': "#DC0000",
+    'Milan': "#0AA44E"
 }
+
+# Static metadata per Grand Prix (round/date/circuit) for the race-by-race view
+race_meta = {
+    'Australian GP': {'round': 1, 'date': '2026-03-08', 'name': 'Australian Grand Prix', 'circuit': 'Albert Park, Melbourne'},
+    'China GP':      {'round': 2, 'date': '2026-03-15', 'name': 'Chinese Grand Prix',   'circuit': 'Shanghai'},
+    'Japanese GP':   {'round': 3, 'date': '2026-03-29', 'name': 'Japanese Grand Prix',  'circuit': 'Suzuka'},
+    'Miami GP':      {'round': 4, 'date': '2026-05-03', 'name': 'Miami Grand Prix',     'circuit': 'Miami International'},
+    'Canada GP':     {'round': 5, 'date': '2026-05-24', 'name': 'Canadian Grand Prix',  'circuit': 'Circuit Gilles Villeneuve'},
+    'Monaco GP':     {'round': 6, 'date': '2026-06-07', 'name': 'Monaco Grand Prix',    'circuit': 'Circuit de Monaco'},
+    'Barcelona GP':  {'round': 7, 'date': '2026-06-14', 'name': 'Barcelona Grand Prix', 'circuit': 'Circuit de Barcelona-Catalunya'},
+}
+
+
+def _clean(value):
+    """Return a trimmed string, or None for missing/NaN values."""
+    if value is None:
+        return None
+    if isinstance(value, float) and pd.isna(value):
+        return None
+    text = str(value).strip()
+    return None if text == '' or text.lower() == 'nan' else text
+
+
+def _pos_label(value):
+    """Format a finishing position like '16.0' -> 'P16'."""
+    text = _clean(value)
+    if text is None:
+        return None
+    try:
+        return 'P' + str(int(float(text)))
+    except ValueError:
+        return text if text.upper().startswith('P') else 'P' + text
 
 # 1. LEADERBOARD DATA - Overall standings with last race points
 print("=" * 80)
@@ -138,6 +170,92 @@ for _, race in races.iterrows():
 
 print()
 
+# 5. RACE-BY-RACE DETAIL DATA (actual result + each player's picks with scores)
+print("RACE-BY-RACE DETAIL:")
+race_details = []
+for race_data in race_points_data:
+    gp = race_data['grand_prix']
+    rtype = race_data['race_type']
+    sub = scoring_df[
+        (scoring_df['Grand Prix'] == gp) &
+        (scoring_df['Race Type'] == rtype)
+    ]
+    if sub.empty:
+        continue
+
+    first = sub.iloc[0]
+    actual = {
+        'pole': _clean(first['Pole Actual']),
+        'p1': _clean(first['P1 Actual']),
+        'p2': _clean(first['P2 Actual']),
+        'p3': _clean(first['P3 Actual']),
+    }
+    # The "random driver" is the same for everyone in a race; expose its result
+    bonus_driver = _clean(first['Random Driver Pred'])
+    bonus_actual_pos = _pos_label(first['Random Actual Pos'])
+
+    players = []
+    for _, row in sub.iterrows():
+        picks = []
+        # Pole + podium slots
+        for slot, pred_col, actual_key, score_col in [
+            ('POLE', 'Pole Pred', 'pole', 'Pole Score'),
+            ('P1', 'P1 Pred', 'p1', 'P1 Score'),
+            ('P2', 'P2 Pred', 'p2', 'P2 Score'),
+            ('P3', 'P3 Pred', 'p3', 'P3 Score'),
+        ]:
+            pred = _clean(row[pred_col])
+            score = int(row[score_col]) if pd.notna(row[score_col]) else 0
+            act = actual[actual_key]
+            if slot == 'POLE':
+                state = 'hit' if score > 0 else 'miss'
+            elif pred is not None and act is not None and pred == act:
+                state = 'hit'
+            elif score > 0:
+                state = 'partial'
+            else:
+                state = 'miss'
+            picks.append({'slot': slot, 'pred': pred, 'score': score, 'state': state})
+
+        # Bonus / random-driver slot (Race only)
+        if rtype == 'Race':
+            r_score = int(row['Random Score']) if pd.notna(row['Random Score']) else 0
+            picks.append({
+                'slot': 'BONUS',
+                'pred': _clean(row['Random Driver Pred']),
+                'predPos': _pos_label(row['Random Pos Pred']),
+                'actualPos': _pos_label(row['Random Actual Pos']),
+                'score': r_score,
+                'state': 'hit' if r_score > 0 else 'miss',
+            })
+
+        players.append({
+            'name': row['Player'],
+            'total': int(row['Total Score']) if pd.notna(row['Total Score']) else 0,
+            'picks': picks,
+        })
+
+    players.sort(key=lambda x: x['total'], reverse=True)
+
+    meta = race_meta.get(gp, {'round': None, 'date': '', 'name': gp, 'circuit': ''})
+    race_details.append({
+        'race_id': race_data['race_id'],
+        'grand_prix': gp,
+        'display_name': meta['name'],
+        'race_type': rtype,
+        'round': meta['round'],
+        'date': meta['date'],
+        'circuit': meta['circuit'],
+        'actual': actual,
+        'bonus_driver': bonus_driver,
+        'bonus_actual_pos': bonus_actual_pos,
+        'players': players,
+    })
+    print(f"  {race_data['race_name']}: {len(players)} players, "
+          f"pole={actual['pole']} P1={actual['p1']} P2={actual['p2']} P3={actual['p3']}")
+
+print()
+
 # Save all data as JSON for the dashboard
 dashboard_data = {
     'players': list(scoring_df['Player'].unique()),
@@ -168,7 +286,8 @@ dashboard_data = {
         }
         for p in progression_data
     ],
-    'accuracy_heatmap': accuracy_heatmap
+    'accuracy_heatmap': accuracy_heatmap,
+    'race_details': race_details
 }
 
 # Save to JSON file

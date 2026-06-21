@@ -544,5 +544,1621 @@
       "race_name": "Barcelona GP (Race)",
       "accuracy": 40.0
     }
+  ],
+  "race_details": [
+    {
+      "race_id": 0,
+      "grand_prix": "Australian GP",
+      "display_name": "Australian Grand Prix",
+      "race_type": "Race",
+      "round": 1,
+      "date": "2026-03-08",
+      "circuit": "Albert Park, Melbourne",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Russell",
+        "p2": "Antonelli",
+        "p3": "Leclerc"
+      },
+      "bonus_driver": "Verstappen",
+      "bonus_actual_pos": "P6",
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 7,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Verstappen",
+              "predPos": "P3",
+              "actualPos": "P6",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 7,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Verstappen",
+              "predPos": "P4",
+              "actualPos": "P6",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Verstappen",
+              "predPos": "P2",
+              "actualPos": "P6",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Verstappen",
+              "predPos": "P2",
+              "actualPos": "P6",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 1,
+      "grand_prix": "China GP",
+      "display_name": "Chinese Grand Prix",
+      "race_type": "Sprint",
+      "round": 2,
+      "date": "2026-03-15",
+      "circuit": "Shanghai",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Russell",
+        "p2": "Leclerc",
+        "p3": "Hamilton"
+      },
+      "bonus_driver": null,
+      "bonus_actual_pos": null,
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 1,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 1,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 1,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 2,
+      "grand_prix": "China GP",
+      "display_name": "Chinese Grand Prix",
+      "race_type": "Race",
+      "round": 2,
+      "date": "2026-03-15",
+      "circuit": "Shanghai",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Antonelli",
+        "p2": "Russell",
+        "p3": "Hamilton"
+      },
+      "bonus_driver": "Colapinto",
+      "bonus_actual_pos": "P10",
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Colapinto",
+              "predPos": "P14",
+              "actualPos": "P10",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 9,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Colapinto",
+              "predPos": "P16",
+              "actualPos": "P10",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Colapinto",
+              "predPos": "P15",
+              "actualPos": "P10",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Colapinto",
+              "predPos": "P13",
+              "actualPos": "P10",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 3,
+      "grand_prix": "Japanese GP",
+      "display_name": "Japanese Grand Prix",
+      "race_type": "Race",
+      "round": 3,
+      "date": "2026-03-29",
+      "circuit": "Suzuka",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Antonelli",
+        "p2": "Piastri",
+        "p3": "Leclerc"
+      },
+      "bonus_driver": "Stroll",
+      "bonus_actual_pos": "P21",
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 7,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Stroll",
+              "predPos": "P17",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 7,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Piastri",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Stroll",
+              "predPos": "P18",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Piastri",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Stroll",
+              "predPos": "P19",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Stroll",
+              "predPos": "P15",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 4,
+      "grand_prix": "Miami GP",
+      "display_name": "Miami Grand Prix",
+      "race_type": "Sprint",
+      "round": 4,
+      "date": "2026-05-03",
+      "circuit": "Miami International",
+      "actual": {
+        "pole": "Norris",
+        "p1": "Norris",
+        "p2": "Piastri",
+        "p3": "Leclerc"
+      },
+      "bonus_driver": null,
+      "bonus_actual_pos": null,
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Norris",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Piastri",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 5,
+      "grand_prix": "Miami GP",
+      "display_name": "Miami Grand Prix",
+      "race_type": "Race",
+      "round": 4,
+      "date": "2026-05-03",
+      "circuit": "Miami International",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Antonelli",
+        "p2": "Norris",
+        "p3": "Piastri"
+      },
+      "bonus_driver": "Perez",
+      "bonus_actual_pos": "P16",
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Perez",
+              "predPos": "P18",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Perez",
+              "predPos": "P19",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Piastri",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Perez",
+              "predPos": "P20",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Perez",
+              "predPos": "P18",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 6,
+      "grand_prix": "Canada GP",
+      "display_name": "Canadian Grand Prix",
+      "race_type": "Sprint",
+      "round": 5,
+      "date": "2026-05-24",
+      "circuit": "Circuit Gilles Villeneuve",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Russell",
+        "p2": "Norris",
+        "p3": "Antonelli"
+      },
+      "bonus_driver": null,
+      "bonus_actual_pos": null,
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": null,
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": null,
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": null,
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": null,
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 7,
+      "grand_prix": "Canada GP",
+      "display_name": "Canadian Grand Prix",
+      "race_type": "Race",
+      "round": 5,
+      "date": "2026-05-24",
+      "circuit": "Circuit Gilles Villeneuve",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Antonelli",
+        "p2": "Hamilton",
+        "p3": "Verstappen"
+      },
+      "bonus_driver": "Alonso",
+      "bonus_actual_pos": "P20",
+      "players": [
+        {
+          "name": "Sven",
+          "total": 8,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Alonso",
+              "predPos": "P18",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Alonso",
+              "predPos": "P17",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Alonso",
+              "predPos": "P16",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Alonso",
+              "predPos": "P21",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 8,
+      "grand_prix": "Monaco GP",
+      "display_name": "Monaco Grand Prix",
+      "race_type": "Race",
+      "round": 6,
+      "date": "2026-06-07",
+      "circuit": "Circuit de Monaco",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Antonelli",
+        "p2": "Hamilton",
+        "p3": "Gasly"
+      },
+      "bonus_driver": "Bottas",
+      "bonus_actual_pos": "P21",
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Bottas",
+              "predPos": "P21",
+              "actualPos": "P21",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Bottas",
+              "predPos": "P16",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Hamilton",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Bottas",
+              "predPos": "P20",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Bottas",
+              "predPos": "P19",
+              "actualPos": "P21",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 9,
+      "grand_prix": "Barcelona GP",
+      "display_name": "Barcelona Grand Prix",
+      "race_type": "Race",
+      "round": 7,
+      "date": "2026-06-14",
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Hamilton",
+        "p2": "Russell",
+        "p3": "Norris"
+      },
+      "bonus_driver": "Hulkenberg",
+      "bonus_actual_pos": "P20",
+      "players": [
+        {
+          "name": "Sven",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Hulkenberg",
+              "predPos": "P16",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Hulkenberg",
+              "predPos": "P16",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Hulkenberg",
+              "predPos": "P11",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Hulkenberg",
+              "predPos": "P12",
+              "actualPos": "P20",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
