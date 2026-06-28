@@ -39,3 +39,7 @@ Veerle,Barcelona GP,Race,Antonelli,Antonelli,Russell,Verstappen,Hulkenberg,P16
 Bernadette,Barcelona GP,Race,Russell,Russell,Piastri,Antonelli,Hulkenberg,P11
 Sven,Barcelona GP,Race,Antonelli,Antonelli,Russell,Norris,Hulkenberg,P16
 Milan,Barcelona GP,Race,Russell,Russell,Antonelli,Piastri,Hulkenberg,P12
+Veerle,Austria GP,Race,Antonelli,Antonelli,Verstappen,Russell,Gasly,P8
+Bernadette,Austria GP,Race,Russell,Antonelli,Hamilton,Piastri,Gasly,
+Sven,Austria GP,Race,Antonelli,Antonelli,Norris,Verstappen,Gasly,P9
+Milan,Austria GP,Race,Antonelli,Antonelli,Verstappen,Russell,Gasly,P8
