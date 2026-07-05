@@ -14,26 +14,26 @@
   "leaderboard": [
     {
       "player": "Sven",
-      "total_points": 59,
-      "last_race_points": 7,
+      "total_points": 64,
+      "last_race_points": 5,
       "color": "#390BE1"
     },
     {
       "player": "Veerle",
-      "total_points": 55,
-      "last_race_points": 3,
+      "total_points": 63,
+      "last_race_points": 8,
       "color": "#00D9FF"
     },
     {
       "player": "Bernadette",
-      "total_points": 51,
-      "last_race_points": 1,
+      "total_points": 59,
+      "last_race_points": 8,
       "color": "#DC0000"
     },
     {
       "player": "Milan",
-      "total_points": 43,
-      "last_race_points": 0,
+      "total_points": 47,
+      "last_race_points": 4,
       "color": "#0AA44E"
     }
   ],
@@ -109,6 +109,12 @@
       "name": "British GP (Sprint)",
       "grand_prix": "British GP",
       "race_type": "Sprint"
+    },
+    {
+      "id": 12,
+      "name": "British GP (Race)",
+      "grand_prix": "British GP",
+      "race_type": "Race"
     }
   ],
   "race_points": [
@@ -231,6 +237,16 @@
         "Sven": 7,
         "Milan": 0
       }
+    },
+    {
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "points_by_player": {
+        "Veerle": 8,
+        "Bernadette": 8,
+        "Sven": 5,
+        "Milan": 4
+      }
     }
   ],
   "progression": [
@@ -352,6 +368,16 @@
         "Bernadette": 51,
         "Sven": 59,
         "Milan": 43
+      }
+    },
+    {
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 63,
+        "Bernadette": 59,
+        "Sven": 64,
+        "Milan": 47
       }
     }
   ],
@@ -643,6 +669,30 @@
       "race_id": 11,
       "race_name": "British GP (Sprint)",
       "accuracy": 0.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 12,
+      "race_name": "British GP (Race)",
+      "accuracy": 40.0
     }
   ],
   "race_details": [
@@ -2563,6 +2613,177 @@
             {
               "slot": "P3",
               "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 12,
+      "grand_prix": "British GP",
+      "display_name": "British Grand Prix",
+      "race_type": "Race",
+      "round": 9,
+      "date": "2026-07-05",
+      "circuit": "Silverstone Circuit",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Leclerc",
+        "p2": "Russell",
+        "p3": "Hamilton"
+      },
+      "bonus_driver": "Russell",
+      "bonus_actual_pos": "P2",
+      "players": [
+        {
+          "name": "Veerle",
+          "total": 8,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Russell",
+              "predPos": "P2",
+              "actualPos": "P2",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 8,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Russell",
+              "predPos": "P3",
+              "actualPos": "P2",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hamilton",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Russell",
+              "predPos": "P4",
+              "actualPos": "P2",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hamilton",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Russell",
+              "predPos": "P1",
+              "actualPos": "P2",
               "score": 0,
               "state": "miss"
             }

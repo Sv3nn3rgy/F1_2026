@@ -4,14 +4,14 @@ RACE PREDICTION SCORING REPORT
 
 FINAL LEADERBOARD
 --------------------------------------------------------------------------------
-1. Sven                  59 POINTS
-2. Veerle                55 POINTS
-3. Bernadette            51 POINTS
-4. Milan                 43 POINTS
+1. Sven                  64 POINTS
+2. Veerle                63 POINTS
+3. Bernadette            59 POINTS
+4. Milan                 47 POINTS
 
 
 ================================================================================
-VEERLE - TOTAL SCORE: 55 POINTS
+VEERLE - TOTAL SCORE: 63 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -118,8 +118,17 @@ P2 Predicted: Verstappen   → Actual: Hamilton     ✗ Incorrect     0 pts
 P3 Predicted: Hamilton     	→ Actual: Norris        ✗ Incorrect     0 pts
 RACE TOTAL           3 POINTS
 
+British GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P1 Predicted: Antonelli    → Actual: Leclerc      ✗ Incorrect     0 pts
+P2 Predicted: Russell      → Actual: Russell      ✓ CORRECT       5 pts
+P3 Predicted: Verstappen   	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Russell P2    → Actual: 2     	 ✓ CORRECT       3 pts
+RACE TOTAL           8 POINTS
+
 ================================================================================
-BERNADETTE - TOTAL SCORE: 51 POINTS
+BERNADETTE - TOTAL SCORE: 59 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -226,8 +235,17 @@ P2 Predicted: Antonelli    → Actual: Hamilton     ✗ Incorrect     0 pts
 P3 Predicted: Verstappen   	→ Actual: Norris        ✗ Incorrect     0 pts
 RACE TOTAL           1 POINTS
 
+British GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Antonelli    ✓ CORRECT       3 pts
+P1 Predicted: Antonelli    → Actual: Leclerc      ✗ Incorrect     0 pts
+P2 Predicted: Russell      → Actual: Russell      ✓ CORRECT       5 pts
+P3 Predicted: Verstappen   	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Russell P3    → Actual: 2     	 ✗ Incorrect     0 pts
+RACE TOTAL           8 POINTS
+
 ================================================================================
-SVEN - TOTAL SCORE: 59 POINTS
+SVEN - TOTAL SCORE: 64 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -334,8 +352,17 @@ P2 Predicted: Hamilton     → Actual: Hamilton     ✓ CORRECT       3 pts
 P3 Predicted: Russell      	→ Actual: Norris        ✗ Incorrect     0 pts
 RACE TOTAL           7 POINTS
 
+British GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Antonelli    ✓ CORRECT       3 pts
+P1 Predicted: Antonelli    → Actual: Leclerc      ✗ Incorrect     0 pts
+P2 Predicted: Hamilton     → Actual: Russell      • In top 3      2 pts
+P3 Predicted: Verstappen   	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Russell P4    → Actual: 2     	 ✗ Incorrect     0 pts
+RACE TOTAL           5 POINTS
+
 ================================================================================
-MILAN - TOTAL SCORE: 43 POINTS
+MILAN - TOTAL SCORE: 47 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -441,4 +468,13 @@ P1 Predicted: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
 P2 Predicted: Antonelli    → Actual: Hamilton     ✗ Incorrect     0 pts
 P3 Predicted: Hamilton     	→ Actual: Norris        ✗ Incorrect     0 pts
 RACE TOTAL           0 POINTS
+
+British GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Antonelli    ✗ Incorrect     0 pts
+P1 Predicted: Russell      → Actual: Leclerc      • In top 3      2 pts
+P2 Predicted: Hamilton     → Actual: Russell      • In top 3      2 pts
+P3 Predicted: Antonelli    	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Russell P1    → Actual: 2     	 ✗ Incorrect     0 pts
+RACE TOTAL           4 POINTS
 
