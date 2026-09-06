@@ -67,6 +67,9 @@ race_name_mapping = {
     'Spanish GP': 'Spanish Grand Prix',
     'Austria GP': 'Austrian Grand Prix',
     'British GP': 'British Grand Prix',
+    'Hungarian GP': 'Hungarian Grand Prix',
+    'Dutch GP': 'Dutch Grand Prix',
+    'Italian GP': 'Italian Grand Prix',
 }
  
 # Create a list to store all scoring records

@@ -13,26 +13,26 @@
   },
   "leaderboard": [
     {
-      "player": "Sven",
-      "total_points": 64,
-      "last_race_points": 5,
-      "color": "#390BE1"
-    },
-    {
-      "player": "Veerle",
-      "total_points": 63,
-      "last_race_points": 8,
-      "color": "#00D9FF"
-    },
-    {
       "player": "Bernadette",
-      "total_points": 59,
-      "last_race_points": 8,
+      "total_points": 87,
+      "last_race_points": 18,
       "color": "#DC0000"
     },
     {
+      "player": "Veerle",
+      "total_points": 69,
+      "last_race_points": 2,
+      "color": "#00D9FF"
+    },
+    {
+      "player": "Sven",
+      "total_points": 68,
+      "last_race_points": 2,
+      "color": "#390BE1"
+    },
+    {
       "player": "Milan",
-      "total_points": 47,
+      "total_points": 64,
       "last_race_points": 4,
       "color": "#0AA44E"
     }
@@ -114,6 +114,24 @@
       "id": 12,
       "name": "British GP (Race)",
       "grand_prix": "British GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 13,
+      "name": "Hungarian GP (Race)",
+      "grand_prix": "Hungarian GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 14,
+      "name": "Dutch GP (Sprint)",
+      "grand_prix": "Dutch GP",
+      "race_type": "Sprint"
+    },
+    {
+      "id": 15,
+      "name": "Dutch GP (Race)",
+      "grand_prix": "Dutch GP",
       "race_type": "Race"
     }
   ],
@@ -247,6 +265,36 @@
         "Sven": 5,
         "Milan": 4
       }
+    },
+    {
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "points_by_player": {
+        "Veerle": 4,
+        "Bernadette": 7,
+        "Sven": 2,
+        "Milan": 10
+      }
+    },
+    {
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "points_by_player": {
+        "Veerle": 0,
+        "Bernadette": 3,
+        "Sven": 0,
+        "Milan": 3
+      }
+    },
+    {
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
+      "points_by_player": {
+        "Veerle": 2,
+        "Bernadette": 18,
+        "Sven": 2,
+        "Milan": 4
+      }
     }
   ],
   "progression": [
@@ -378,6 +426,36 @@
         "Bernadette": 59,
         "Sven": 64,
         "Milan": 47
+      }
+    },
+    {
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 67,
+        "Bernadette": 66,
+        "Sven": 66,
+        "Milan": 57
+      }
+    },
+    {
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "cumulative_by_player": {
+        "Veerle": 67,
+        "Bernadette": 69,
+        "Sven": 66,
+        "Milan": 60
+      }
+    },
+    {
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 69,
+        "Bernadette": 87,
+        "Sven": 68,
+        "Milan": 64
       }
     }
   ],
@@ -692,6 +770,78 @@
       "player": "Milan",
       "race_id": 12,
       "race_name": "British GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 13,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "accuracy": 0.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 14,
+      "race_name": "Dutch GP (Sprint)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
+      "accuracy": 80.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 15,
+      "race_name": "Dutch GP (Race)",
       "accuracy": 40.0
     }
   ],
@@ -2784,6 +2934,487 @@
               "pred": "Russell",
               "predPos": "P1",
               "actualPos": "P2",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 13,
+      "grand_prix": "Hungarian GP",
+      "display_name": "Hungarian Grand Prix",
+      "race_type": "Race",
+      "round": 10,
+      "date": "2026-07-26",
+      "circuit": "Hungaroring, Budapest",
+      "actual": {
+        "pole": "Norris",
+        "p1": "Norris",
+        "p2": "Verstappen",
+        "p3": "Antonelli"
+      },
+      "bonus_driver": "Ocon",
+      "bonus_actual_pos": "P16",
+      "players": [
+        {
+          "name": "Milan",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Norris",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Norris",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Ocon",
+              "predPos": "P12",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 7,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Norris",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Ocon",
+              "predPos": "P13",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Ocon",
+              "predPos": "P11",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Ocon",
+              "predPos": "P10",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 14,
+      "grand_prix": "Dutch GP",
+      "display_name": "Dutch Grand Prix",
+      "race_type": "Sprint",
+      "round": 11,
+      "date": "2026-08-23",
+      "circuit": "Circuit Zandvoort",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Russell",
+        "p2": "Leclerc",
+        "p3": "Norris"
+      },
+      "bonus_driver": null,
+      "bonus_actual_pos": null,
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 3,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 0,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 15,
+      "grand_prix": "Dutch GP",
+      "display_name": "Dutch Grand Prix",
+      "race_type": "Race",
+      "round": 11,
+      "date": "2026-08-23",
+      "circuit": "Circuit Zandvoort",
+      "actual": {
+        "pole": "Norris",
+        "p1": "Norris",
+        "p2": "Antonelli",
+        "p3": "Russell"
+      },
+      "bonus_driver": "Sainz",
+      "bonus_actual_pos": "P16",
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 18,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Norris",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Norris",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Sainz",
+              "predPos": "P15",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Sainz",
+              "predPos": "P18",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Sainz",
+              "predPos": "P8",
+              "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Sainz",
+              "predPos": "P18",
+              "actualPos": "P16",
               "score": 0,
               "state": "miss"
             }
