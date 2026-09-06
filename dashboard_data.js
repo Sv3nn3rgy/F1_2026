@@ -14,26 +14,26 @@ window.DASHBOARD_DATA = {
   "leaderboard": [
     {
       "player": "Bernadette",
-      "total_points": 87,
-      "last_race_points": 18,
+      "total_points": 92,
+      "last_race_points": 5,
       "color": "#DC0000"
     },
     {
       "player": "Veerle",
-      "total_points": 69,
+      "total_points": 71,
       "last_race_points": 2,
       "color": "#00D9FF"
     },
     {
       "player": "Sven",
-      "total_points": 68,
+      "total_points": 70,
       "last_race_points": 2,
       "color": "#390BE1"
     },
     {
       "player": "Milan",
-      "total_points": 64,
-      "last_race_points": 4,
+      "total_points": 69,
+      "last_race_points": 5,
       "color": "#0AA44E"
     }
   ],
@@ -132,6 +132,12 @@ window.DASHBOARD_DATA = {
       "id": 15,
       "name": "Dutch GP (Race)",
       "grand_prix": "Dutch GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 16,
+      "name": "Italian GP (Race)",
+      "grand_prix": "Italian GP",
       "race_type": "Race"
     }
   ],
@@ -295,6 +301,16 @@ window.DASHBOARD_DATA = {
         "Sven": 2,
         "Milan": 4
       }
+    },
+    {
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
+      "points_by_player": {
+        "Veerle": 2,
+        "Bernadette": 5,
+        "Sven": 2,
+        "Milan": 5
+      }
     }
   ],
   "progression": [
@@ -456,6 +472,16 @@ window.DASHBOARD_DATA = {
         "Bernadette": 87,
         "Sven": 68,
         "Milan": 64
+      }
+    },
+    {
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 71,
+        "Bernadette": 92,
+        "Sven": 70,
+        "Milan": 69
       }
     }
   ],
@@ -842,6 +868,30 @@ window.DASHBOARD_DATA = {
       "player": "Milan",
       "race_id": 15,
       "race_name": "Dutch GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 16,
+      "race_name": "Italian GP (Race)",
       "accuracy": 40.0
     }
   ],
@@ -2130,7 +2180,7 @@ window.DASHBOARD_DATA = {
         "pole": "Antonelli",
         "p1": "Antonelli",
         "p2": "Hamilton",
-        "p3": "Gasly"
+        "p3": "Hadjar"
       },
       "bonus_driver": "Bottas",
       "bonus_actual_pos": "P21",
@@ -3415,6 +3465,177 @@ window.DASHBOARD_DATA = {
               "pred": "Sainz",
               "predPos": "P18",
               "actualPos": "P16",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 16,
+      "grand_prix": "Italian GP",
+      "display_name": "Italian Grand Prix",
+      "race_type": "Race",
+      "round": 12,
+      "date": "2026-09-06",
+      "circuit": "Monza",
+      "actual": {
+        "pole": null,
+        "p1": "Antonelli",
+        "p2": "Russell",
+        "p3": "Verstappen"
+      },
+      "bonus_driver": "Albon",
+      "bonus_actual_pos": "P17",
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Albon",
+              "predPos": "P17",
+              "actualPos": "P17",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Albon",
+              "predPos": "P17",
+              "actualPos": "P17",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Albon",
+              "predPos": "P16",
+              "actualPos": "P17",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 2,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Albon",
+              "predPos": "P12",
+              "actualPos": "P17",
               "score": 0,
               "state": "miss"
             }

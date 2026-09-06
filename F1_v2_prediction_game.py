@@ -31,12 +31,15 @@ logging.getLogger('fastf1').setLevel(logging.WARNING)
 # Get race Results
 season_results = []
 
-# check how many rounds and sessions are available for 2026 season in the API and load them
-race_left = len(fastf1.get_events_remaining()) + 1
-race_done = 24 - race_left
+# Load every round whose race has already started. Deriving this from the
+# schedule (rather than counting remaining events) keeps the round that ran
+# today in scope; sessions the API has no results for are skipped below.
+schedule = fastf1.get_event_schedule(2026, include_testing=False)
+now_utc = pd.Timestamp.utcnow().tz_localize(None)
+rounds_done = schedule.loc[schedule['Session5DateUtc'] <= now_utc, 'RoundNumber'].tolist()
 
 # use API to get results for a specific event (e.g., 2026, round 2, Race)
-for round_num in range(1,race_done):
+for round_num in rounds_done:
     for session_type in ['Sprint', 'Race']:
         try:
             print(f"Loading Round {round_num} - {session_type}...")

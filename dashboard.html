@@ -155,12 +155,14 @@
   .chartbox{background:var(--card);border:1px solid var(--line);border-radius:14px;
     padding:16px;height:330px;margin-bottom:34px}
   .ptable-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
-  table.pts{border-collapse:collapse;width:100%;font-size:13px}
+  table.pts{border-collapse:collapse;width:100%;font-size:11px}
+  table.pts .cum{font-family:'Space Mono',monospace}
+  table.pts .gain{margin-left:5px;font-size:9px;color:var(--dim2)}
+  table.pts .gain.zero{opacity:.45}
   table.pts th,table.pts td{padding:10px 12px;text-align:center;white-space:nowrap;border-bottom:1px solid var(--line)}
-  table.pts th{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim2);
+  table.pts th{font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--dim2);
     font-weight:700;background:#101015;position:sticky;top:0}
   table.pts td.player,table.pts th.player{text-align:left;font-weight:700;position:sticky;left:0;background:#101015;z-index:1}
-  table.pts td.total{font-family:'Space Mono',monospace;font-weight:700}
   table.pts td.zero{color:var(--dim2)}
   table.pts tr:last-child td{border-bottom:none}
   table.pts tr.lead td{background:rgba(255,45,45,.08)}
@@ -295,12 +297,18 @@ function renderStats(){
   // ----- points table (best player on top) -----
   const totals={}; players.forEach(p=>totals[p]=rp.reduce((s,r)=>s+ptsOf(r,p),0));
   const order=players.slice().sort((a,b)=>totals[b]-totals[a]);
-  let head='<tr><th class="player">Player</th>'+labels.map(l=>`<th>${l}</th>`).join('')+'<th>Total</th></tr>';
+  // newest race first: its running total is the season total, so no separate Total column
+  let head='<tr><th class="player">Player</th>'
+    +labels.slice().reverse().map(l=>`<th>${l}</th>`).join('')+'</tr>';
   let body=order.map((p,i)=>{
-    const cells=rp.map(r=>{const v=ptsOf(r,p);return `<td class="${v===0?'zero':''}">${v}</td>`;}).join('');
+    // each cell shows the running total after that race, plus what the race itself scored
+    let run=0;
+    const cells=rp.map(r=>{const v=ptsOf(r,p);run+=v;
+      return `<td><span class="cum">${run}</span><span class="gain${v===0?' zero':''}">+${v}</span></td>`;})
+      .reverse().join('');
     return `<tr class="${i===0?'lead':''}">
       <td class="player"><span class="pdot" style="background:${colors[p]||'#888'}"></span>${p}</td>
-      ${cells}<td class="total">${totals[p]}</td></tr>`;
+      ${cells}</tr>`;
   }).join('');
   document.getElementById('pointsTable').innerHTML=`<table class="pts"><thead>${head}</thead><tbody>${body}</tbody></table>`;
 
