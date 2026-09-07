@@ -14,27 +14,27 @@
   "leaderboard": [
     {
       "player": "Bernadette",
-      "total_points": 92,
+      "total_points": 105,
       "last_race_points": 5,
       "color": "#DC0000"
     },
     {
+      "player": "Milan",
+      "total_points": 84,
+      "last_race_points": 5,
+      "color": "#0AA44E"
+    },
+    {
       "player": "Veerle",
-      "total_points": 71,
+      "total_points": 83,
       "last_race_points": 2,
       "color": "#00D9FF"
     },
     {
       "player": "Sven",
-      "total_points": 70,
+      "total_points": 83,
       "last_race_points": 2,
       "color": "#390BE1"
-    },
-    {
-      "player": "Milan",
-      "total_points": 69,
-      "last_race_points": 5,
-      "color": "#0AA44E"
     }
   ],
   "races": [
@@ -118,24 +118,30 @@
     },
     {
       "id": 13,
+      "name": "Belgian GP (Race)",
+      "grand_prix": "Belgian GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 14,
       "name": "Hungarian GP (Race)",
       "grand_prix": "Hungarian GP",
       "race_type": "Race"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Dutch GP (Sprint)",
       "grand_prix": "Dutch GP",
       "race_type": "Sprint"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Dutch GP (Race)",
       "grand_prix": "Dutch GP",
       "race_type": "Race"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Italian GP (Race)",
       "grand_prix": "Italian GP",
       "race_type": "Race"
@@ -274,6 +280,16 @@
     },
     {
       "race_id": 13,
+      "race_name": "Belgian GP (Race)",
+      "points_by_player": {
+        "Veerle": 12,
+        "Bernadette": 13,
+        "Sven": 13,
+        "Milan": 15
+      }
+    },
+    {
+      "race_id": 14,
       "race_name": "Hungarian GP (Race)",
       "points_by_player": {
         "Veerle": 4,
@@ -283,7 +299,7 @@
       }
     },
     {
-      "race_id": 14,
+      "race_id": 15,
       "race_name": "Dutch GP (Sprint)",
       "points_by_player": {
         "Veerle": 0,
@@ -293,7 +309,7 @@
       }
     },
     {
-      "race_id": 15,
+      "race_id": 16,
       "race_name": "Dutch GP (Race)",
       "points_by_player": {
         "Veerle": 2,
@@ -303,7 +319,7 @@
       }
     },
     {
-      "race_id": 16,
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "points_by_player": {
         "Veerle": 2,
@@ -446,42 +462,52 @@
     },
     {
       "race_id": 13,
-      "race_name": "Hungarian GP (Race)",
+      "race_name": "Belgian GP (Race)",
       "cumulative_by_player": {
-        "Veerle": 67,
-        "Bernadette": 66,
-        "Sven": 66,
-        "Milan": 57
+        "Veerle": 75,
+        "Bernadette": 72,
+        "Sven": 77,
+        "Milan": 62
       }
     },
     {
       "race_id": 14,
-      "race_name": "Dutch GP (Sprint)",
+      "race_name": "Hungarian GP (Race)",
       "cumulative_by_player": {
-        "Veerle": 67,
-        "Bernadette": 69,
-        "Sven": 66,
-        "Milan": 60
+        "Veerle": 79,
+        "Bernadette": 79,
+        "Sven": 79,
+        "Milan": 72
       }
     },
     {
       "race_id": 15,
-      "race_name": "Dutch GP (Race)",
+      "race_name": "Dutch GP (Sprint)",
       "cumulative_by_player": {
-        "Veerle": 69,
-        "Bernadette": 87,
-        "Sven": 68,
-        "Milan": 64
+        "Veerle": 79,
+        "Bernadette": 82,
+        "Sven": 79,
+        "Milan": 75
       }
     },
     {
       "race_id": 16,
+      "race_name": "Dutch GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 81,
+        "Bernadette": 100,
+        "Sven": 81,
+        "Milan": 79
+      }
+    },
+    {
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "cumulative_by_player": {
-        "Veerle": 71,
-        "Bernadette": 92,
-        "Sven": 70,
-        "Milan": 69
+        "Veerle": 83,
+        "Bernadette": 105,
+        "Sven": 83,
+        "Milan": 84
       }
     }
   ],
@@ -801,96 +827,120 @@
     {
       "player": "Veerle",
       "race_id": 13,
-      "race_name": "Hungarian GP (Race)",
-      "accuracy": 40.0
+      "race_name": "Belgian GP (Race)",
+      "accuracy": 80.0
     },
     {
       "player": "Bernadette",
       "race_id": 13,
-      "race_name": "Hungarian GP (Race)",
-      "accuracy": 40.0
+      "race_name": "Belgian GP (Race)",
+      "accuracy": 60.0
     },
     {
       "player": "Sven",
       "race_id": 13,
-      "race_name": "Hungarian GP (Race)",
-      "accuracy": 20.0
+      "race_name": "Belgian GP (Race)",
+      "accuracy": 80.0
     },
     {
       "player": "Milan",
       "race_id": 13,
-      "race_name": "Hungarian GP (Race)",
+      "race_name": "Belgian GP (Race)",
       "accuracy": 60.0
     },
     {
       "player": "Veerle",
       "race_id": 14,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 14,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 14,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 14,
+      "race_name": "Hungarian GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 15,
       "race_name": "Dutch GP (Sprint)",
       "accuracy": 0.0
     },
     {
       "player": "Bernadette",
-      "race_id": 14,
+      "race_id": 15,
       "race_name": "Dutch GP (Sprint)",
       "accuracy": 20.0
     },
     {
       "player": "Sven",
-      "race_id": 14,
+      "race_id": 15,
       "race_name": "Dutch GP (Sprint)",
       "accuracy": 0.0
     },
     {
       "player": "Milan",
-      "race_id": 14,
+      "race_id": 15,
       "race_name": "Dutch GP (Sprint)",
       "accuracy": 20.0
     },
     {
       "player": "Veerle",
-      "race_id": 15,
+      "race_id": 16,
       "race_name": "Dutch GP (Race)",
       "accuracy": 20.0
     },
     {
       "player": "Bernadette",
-      "race_id": 15,
+      "race_id": 16,
       "race_name": "Dutch GP (Race)",
       "accuracy": 80.0
     },
     {
       "player": "Sven",
-      "race_id": 15,
+      "race_id": 16,
       "race_name": "Dutch GP (Race)",
       "accuracy": 20.0
     },
     {
       "player": "Milan",
-      "race_id": 15,
+      "race_id": 16,
       "race_name": "Dutch GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Veerle",
-      "race_id": 16,
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "accuracy": 20.0
     },
     {
       "player": "Bernadette",
-      "race_id": 16,
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "accuracy": 40.0
     },
     {
       "player": "Sven",
-      "race_id": 16,
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "accuracy": 20.0
     },
     {
       "player": "Milan",
-      "race_id": 16,
+      "race_id": 17,
       "race_name": "Italian GP (Race)",
       "accuracy": 40.0
     }
@@ -2993,10 +3043,181 @@
     },
     {
       "race_id": 13,
+      "grand_prix": "Belgian GP",
+      "display_name": "Belgian Grand Prix",
+      "race_type": "Race",
+      "round": 10,
+      "date": "2026-07-19",
+      "circuit": "Spa-Francorchamps",
+      "actual": {
+        "pole": "Antonelli",
+        "p1": "Antonelli",
+        "p2": "Leclerc",
+        "p3": "Verstappen"
+      },
+      "bonus_driver": "Antonelli",
+      "bonus_actual_pos": "P1",
+      "players": [
+        {
+          "name": "Milan",
+          "total": 15,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Antonelli",
+              "predPos": "P2",
+              "actualPos": "P1",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 13,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Antonelli",
+              "predPos": "P2",
+              "actualPos": "P1",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Sven",
+          "total": 13,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hamilton",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Antonelli",
+              "predPos": "P1",
+              "actualPos": "P1",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 12,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Antonelli",
+              "predPos": "P2",
+              "actualPos": "P1",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 14,
       "grand_prix": "Hungarian GP",
       "display_name": "Hungarian Grand Prix",
       "race_type": "Race",
-      "round": 10,
+      "round": 11,
       "date": "2026-07-26",
       "circuit": "Hungaroring, Budapest",
       "actual": {
@@ -3163,11 +3384,11 @@
       ]
     },
     {
-      "race_id": 14,
+      "race_id": 15,
       "grand_prix": "Dutch GP",
       "display_name": "Dutch Grand Prix",
       "race_type": "Sprint",
-      "round": 11,
+      "round": 12,
       "date": "2026-08-23",
       "circuit": "Circuit Zandvoort",
       "actual": {
@@ -3302,11 +3523,11 @@
       ]
     },
     {
-      "race_id": 15,
+      "race_id": 16,
       "grand_prix": "Dutch GP",
       "display_name": "Dutch Grand Prix",
       "race_type": "Race",
-      "round": 11,
+      "round": 12,
       "date": "2026-08-23",
       "circuit": "Circuit Zandvoort",
       "actual": {
@@ -3473,15 +3694,15 @@
       ]
     },
     {
-      "race_id": 16,
+      "race_id": 17,
       "grand_prix": "Italian GP",
       "display_name": "Italian Grand Prix",
       "race_type": "Race",
-      "round": 12,
+      "round": 13,
       "date": "2026-09-06",
       "circuit": "Monza",
       "actual": {
-        "pole": null,
+        "pole": "Gasly",
         "p1": "Antonelli",
         "p2": "Russell",
         "p3": "Verstappen"
