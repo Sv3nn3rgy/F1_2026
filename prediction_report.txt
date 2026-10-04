@@ -5,8 +5,8 @@ RACE PREDICTION SCORING REPORT
 FINAL LEADERBOARD
 --------------------------------------------------------------------------------
 1. Bernadette           129 POINTS
-2. Sven                 106 POINTS
-3. Milan                 99 POINTS
+2. Sven                 109 POINTS
+3. Milan                102 POINTS
 4. Veerle                98 POINTS
 
 
@@ -370,7 +370,7 @@ RACE TOTAL           4 POINTS
 
 Bahrain GP (Race)
 --------------------------------------------------------------------------------
-Pole Position: Antonelli    → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Antonelli    → Actual: Verstappen   ✗ Incorrect     0 pts
 P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
 P2 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
 P3 Predicted: Russell      	→ Actual: Hamilton      ✗ Incorrect     0 pts
@@ -378,7 +378,7 @@ Predicted: Norris P4    → Actual: 8     	 ✗ Incorrect     0 pts
 RACE TOTAL           10 POINTS
 
 ================================================================================
-SVEN - TOTAL SCORE: 106 POINTS
+SVEN - TOTAL SCORE: 109 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -549,15 +549,15 @@ RACE TOTAL           13 POINTS
 
 Bahrain GP (Race)
 --------------------------------------------------------------------------------
-Pole Position: Verstappen   → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Verstappen   → Actual: Verstappen   ✓ CORRECT       3 pts
 P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
 P2 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
 P3 Predicted: Hadjar       	→ Actual: Hamilton      ✗ Incorrect     0 pts
 Predicted: Norris P5    → Actual: 8     	 ✗ Incorrect     0 pts
-RACE TOTAL           10 POINTS
+RACE TOTAL           13 POINTS
 
 ================================================================================
-MILAN - TOTAL SCORE: 99 POINTS
+MILAN - TOTAL SCORE: 102 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -737,10 +737,10 @@ RACE TOTAL           5 POINTS
 
 Bahrain GP (Race)
 --------------------------------------------------------------------------------
-Pole Position: Verstappen   → Actual: None         ✗ Incorrect     0 pts
+Pole Position: Verstappen   → Actual: Verstappen   ✓ CORRECT       3 pts
 P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
 P2 Predicted: Hadjar       → Actual: Antonelli    ✗ Incorrect     0 pts
 P3 Predicted: Norris       	→ Actual: Hamilton      ✗ Incorrect     0 pts
 Predicted: Norris P3    → Actual: 8     	 ✗ Incorrect     0 pts
-RACE TOTAL           5 POINTS
+RACE TOTAL           8 POINTS
 

@@ -20,14 +20,14 @@ window.DASHBOARD_DATA = {
     },
     {
       "player": "Sven",
-      "total_points": 106,
-      "last_race_points": 10,
+      "total_points": 109,
+      "last_race_points": 13,
       "color": "#390BE1"
     },
     {
       "player": "Milan",
-      "total_points": 99,
-      "last_race_points": 5,
+      "total_points": 102,
+      "last_race_points": 8,
       "color": "#0AA44E"
     },
     {
@@ -370,8 +370,8 @@ window.DASHBOARD_DATA = {
       "race_name": "Bahrain GP (Race)",
       "points_by_player": {
         "Bernadette": 10,
-        "Sven": 10,
-        "Milan": 5
+        "Sven": 13,
+        "Milan": 8
       }
     }
   ],
@@ -580,8 +580,8 @@ window.DASHBOARD_DATA = {
       "race_name": "Bahrain GP (Race)",
       "cumulative_by_player": {
         "Bernadette": 129,
-        "Sven": 106,
-        "Milan": 99
+        "Sven": 109,
+        "Milan": 102
       }
     }
   ],
@@ -1070,13 +1070,13 @@ window.DASHBOARD_DATA = {
       "player": "Sven",
       "race_id": 20,
       "race_name": "Bahrain GP (Race)",
-      "accuracy": 40.0
+      "accuracy": 60.0
     },
     {
       "player": "Milan",
       "race_id": 20,
       "race_name": "Bahrain GP (Race)",
-      "accuracy": 20.0
+      "accuracy": 40.0
     }
   ],
   "race_details": [
@@ -4311,7 +4311,7 @@ window.DASHBOARD_DATA = {
       "date": "2026-10-04",
       "circuit": "Kuala Lumpur",
       "actual": {
-        "pole": null,
+        "pole": "Verstappen",
         "p1": "Verstappen",
         "p2": "Antonelli",
         "p3": "Hamilton"
@@ -4321,13 +4321,13 @@ window.DASHBOARD_DATA = {
       "players": [
         {
           "name": "Sven",
-          "total": 10,
+          "total": 13,
           "picks": [
             {
               "slot": "POLE",
               "pred": "Verstappen",
-              "score": 0,
-              "state": "miss"
+              "score": 3,
+              "state": "hit"
             },
             {
               "slot": "P1",
@@ -4397,13 +4397,13 @@ window.DASHBOARD_DATA = {
         },
         {
           "name": "Milan",
-          "total": 5,
+          "total": 8,
           "picks": [
             {
               "slot": "POLE",
               "pred": "Verstappen",
-              "score": 0,
-              "state": "miss"
+              "score": 3,
+              "state": "hit"
             },
             {
               "slot": "P1",

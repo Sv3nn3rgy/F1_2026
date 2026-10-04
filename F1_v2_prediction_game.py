@@ -40,7 +40,7 @@ rounds_done = schedule.loc[schedule['Session5DateUtc'] <= now_utc, 'RoundNumber'
 
 # use API to get results for a specific event (e.g., 2026, round 2, Race)
 for round_num in rounds_done:
-    for session_type in ['Sprint', 'Race']:
+    for session_type in ['Sprint', 'Race', 'Qualifying']:
         try:
             print(f"Loading Round {round_num} - {session_type}...")
             session = fastf1.get_session(2026, round_num, session_type)
@@ -114,12 +114,19 @@ for idx, pred_row in predictions_df.iterrows():
     # Sort by actual position to get the finishing order
     race_results_sorted = race_results.sort_values('Position').reset_index(drop=True)
     
-    # Get the actual pole position (grid position 1)
+    # Get the actual pole position (grid position 1). FastF1 sometimes lags
+    # in publishing the Race session's GridPosition for very recent events,
+    # so fall back to the Qualifying session's P1 when that happens.
     pole_actual_rows = race_results[race_results['GridPosition'] == 1.0]
     if not pole_actual_rows.empty:
         pole_actual = pole_actual_rows.iloc[0]['LastName']
     else:
-        pole_actual = None
+        quali_results = season_results_df[
+            (season_results_df['RaceName'] == race_name_in_results) &
+            (season_results_df['RaceType'] == 'Qualifying') &
+            (season_results_df['Position'] == 1.0)
+        ]
+        pole_actual = strip_accents(quali_results.iloc[0]['LastName']) if not quali_results.empty else None
     
     # Get the actual top 3 finishers
     top3_actual = race_results_sorted[race_results_sorted['Position'] <= 3]['LastName'].tolist()
