@@ -4,14 +4,14 @@ RACE PREDICTION SCORING REPORT
 
 FINAL LEADERBOARD
 --------------------------------------------------------------------------------
-1. Bernadette           105 POINTS
-2. Milan                 84 POINTS
-3. Sven                  83 POINTS
-4. Veerle                83 POINTS
+1. Bernadette           129 POINTS
+2. Sven                 106 POINTS
+3. Milan                 99 POINTS
+4. Veerle                98 POINTS
 
 
 ================================================================================
-VEERLE - TOTAL SCORE: 83 POINTS
+VEERLE - TOTAL SCORE: 98 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -171,8 +171,26 @@ P3 Predicted: Leclerc      	→ Actual: Verstappen    ✗ Incorrect     0 pts
 Predicted: Albon  P16   → Actual: 17    	 ✗ Incorrect     0 pts
 RACE TOTAL           2 POINTS
 
+Spanish GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Leclerc      → Actual: Norris       ✗ Incorrect     0 pts
+P1 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
+P2 Predicted: Leclerc      → Actual: Verstappen   ✗ Incorrect     0 pts
+P3 Predicted: Russell      	→ Actual: Norris        ✗ Incorrect     0 pts
+Predicted: Leclerc P3    → Actual: 4     	 ✗ Incorrect     0 pts
+RACE TOTAL           5 POINTS
+
+Azerbaijan GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Verstappen   → Actual: Russell      ✗ Incorrect     0 pts
+P1 Predicted: Russell      → Actual: Russell      ✓ CORRECT       5 pts
+P2 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
+P3 Predicted: Leclerc      	→ Actual: Hadjar        ✗ Incorrect     0 pts
+Predicted: Lawson P11   → Actual: 12    	 ✗ Incorrect     0 pts
+RACE TOTAL           10 POINTS
+
 ================================================================================
-BERNADETTE - TOTAL SCORE: 105 POINTS
+BERNADETTE - TOTAL SCORE: 129 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -332,8 +350,35 @@ P3 Predicted: Leclerc      	→ Actual: Verstappen    ✗ Incorrect     0 pts
 Predicted: Albon  P17   → Actual: 17    	 ✓ CORRECT       3 pts
 RACE TOTAL           5 POINTS
 
+Spanish GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Norris       ✗ Incorrect     0 pts
+P1 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
+P2 Predicted: Piastri      → Actual: Verstappen   ✗ Incorrect     0 pts
+P3 Predicted: Verstappen   	→ Actual: Norris        • In top 3      2 pts
+Predicted: Leclerc P4    → Actual: 4     	 ✓ CORRECT       3 pts
+RACE TOTAL           10 POINTS
+
+Azerbaijan GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Verstappen   → Actual: Russell      ✗ Incorrect     0 pts
+P1 Predicted: Verstappen   → Actual: Russell      • In top 3      2 pts
+P2 Predicted: Antonelli    → Actual: Verstappen   ✗ Incorrect     0 pts
+P3 Predicted: Russell      	→ Actual: Hadjar        • In top 3      2 pts
+Predicted: Lawson P10   → Actual: 12    	 ✗ Incorrect     0 pts
+RACE TOTAL           4 POINTS
+
+Bahrain GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: None         ✗ Incorrect     0 pts
+P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
+P2 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
+P3 Predicted: Russell      	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Norris P4    → Actual: 8     	 ✗ Incorrect     0 pts
+RACE TOTAL           10 POINTS
+
 ================================================================================
-SVEN - TOTAL SCORE: 83 POINTS
+SVEN - TOTAL SCORE: 106 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -493,8 +538,26 @@ P3 Predicted: Leclerc      	→ Actual: Verstappen    ✗ Incorrect     0 pts
 Predicted: Albon  P12   → Actual: 17    	 ✗ Incorrect     0 pts
 RACE TOTAL           2 POINTS
 
+Azerbaijan GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Russell      → Actual: Russell      ✓ CORRECT       3 pts
+P1 Predicted: Russell      → Actual: Russell      ✓ CORRECT       5 pts
+P2 Predicted: Antonelli    → Actual: Verstappen   ✗ Incorrect     0 pts
+P3 Predicted: Verstappen   	→ Actual: Hadjar        • In top 3      2 pts
+Predicted: Lawson P12   → Actual: 12    	 ✓ CORRECT       3 pts
+RACE TOTAL           13 POINTS
+
+Bahrain GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Verstappen   → Actual: None         ✗ Incorrect     0 pts
+P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
+P2 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
+P3 Predicted: Hadjar       	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Norris P5    → Actual: 8     	 ✗ Incorrect     0 pts
+RACE TOTAL           10 POINTS
+
 ================================================================================
-MILAN - TOTAL SCORE: 84 POINTS
+MILAN - TOTAL SCORE: 99 POINTS
 ================================================================================
 
 Australian GP (Race)
@@ -652,5 +715,32 @@ P1 Predicted: Russell      → Actual: Antonelli    • In top 3      2 pts
 P2 Predicted: Leclerc      → Actual: Russell      ✗ Incorrect     0 pts
 P3 Predicted: Norris       	→ Actual: Verstappen    ✗ Incorrect     0 pts
 Predicted: Albon  P17   → Actual: 17    	 ✓ CORRECT       3 pts
+RACE TOTAL           5 POINTS
+
+Spanish GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Norris       ✗ Incorrect     0 pts
+P1 Predicted: Antonelli    → Actual: Antonelli    ✓ CORRECT       5 pts
+P2 Predicted: Russell      → Actual: Verstappen   ✗ Incorrect     0 pts
+P3 Predicted: Leclerc      	→ Actual: Norris        ✗ Incorrect     0 pts
+Predicted: Leclerc P3    → Actual: 4     	 ✗ Incorrect     0 pts
+RACE TOTAL           5 POINTS
+
+Azerbaijan GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Antonelli    → Actual: Russell      ✗ Incorrect     0 pts
+P1 Predicted: Antonelli    → Actual: Russell      ✗ Incorrect     0 pts
+P2 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
+P3 Predicted: Leclerc      	→ Actual: Hadjar        ✗ Incorrect     0 pts
+Predicted: Lawson P13   → Actual: 12    	 ✗ Incorrect     0 pts
+RACE TOTAL           5 POINTS
+
+Bahrain GP (Race)
+--------------------------------------------------------------------------------
+Pole Position: Verstappen   → Actual: None         ✗ Incorrect     0 pts
+P1 Predicted: Verstappen   → Actual: Verstappen   ✓ CORRECT       5 pts
+P2 Predicted: Hadjar       → Actual: Antonelli    ✗ Incorrect     0 pts
+P3 Predicted: Norris       	→ Actual: Hamilton      ✗ Incorrect     0 pts
+Predicted: Norris P3    → Actual: 8     	 ✗ Incorrect     0 pts
 RACE TOTAL           5 POINTS
 

@@ -14,27 +14,27 @@
   "leaderboard": [
     {
       "player": "Bernadette",
-      "total_points": 105,
-      "last_race_points": 5,
+      "total_points": 129,
+      "last_race_points": 10,
       "color": "#DC0000"
     },
     {
+      "player": "Sven",
+      "total_points": 106,
+      "last_race_points": 10,
+      "color": "#390BE1"
+    },
+    {
       "player": "Milan",
-      "total_points": 84,
+      "total_points": 99,
       "last_race_points": 5,
       "color": "#0AA44E"
     },
     {
       "player": "Veerle",
-      "total_points": 83,
-      "last_race_points": 2,
+      "total_points": 98,
+      "last_race_points": 10,
       "color": "#00D9FF"
-    },
-    {
-      "player": "Sven",
-      "total_points": 83,
-      "last_race_points": 2,
-      "color": "#390BE1"
     }
   ],
   "races": [
@@ -144,6 +144,24 @@
       "id": 17,
       "name": "Italian GP (Race)",
       "grand_prix": "Italian GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 18,
+      "name": "Spanish GP (Race)",
+      "grand_prix": "Spanish GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 19,
+      "name": "Azerbaijan GP (Race)",
+      "grand_prix": "Azerbaijan GP",
+      "race_type": "Race"
+    },
+    {
+      "id": 20,
+      "name": "Bahrain GP (Race)",
+      "grand_prix": "Bahrain GP",
       "race_type": "Race"
     }
   ],
@@ -327,6 +345,34 @@
         "Sven": 2,
         "Milan": 5
       }
+    },
+    {
+      "race_id": 18,
+      "race_name": "Spanish GP (Race)",
+      "points_by_player": {
+        "Veerle": 5,
+        "Bernadette": 10,
+        "Milan": 5
+      }
+    },
+    {
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "points_by_player": {
+        "Veerle": 10,
+        "Bernadette": 4,
+        "Sven": 13,
+        "Milan": 5
+      }
+    },
+    {
+      "race_id": 20,
+      "race_name": "Bahrain GP (Race)",
+      "points_by_player": {
+        "Bernadette": 10,
+        "Sven": 10,
+        "Milan": 5
+      }
     }
   ],
   "progression": [
@@ -508,6 +554,34 @@
         "Bernadette": 105,
         "Sven": 83,
         "Milan": 84
+      }
+    },
+    {
+      "race_id": 18,
+      "race_name": "Spanish GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 88,
+        "Bernadette": 115,
+        "Milan": 89
+      }
+    },
+    {
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "cumulative_by_player": {
+        "Veerle": 98,
+        "Bernadette": 119,
+        "Sven": 96,
+        "Milan": 94
+      }
+    },
+    {
+      "race_id": 20,
+      "race_name": "Bahrain GP (Race)",
+      "cumulative_by_player": {
+        "Bernadette": 129,
+        "Sven": 106,
+        "Milan": 99
       }
     }
   ],
@@ -943,6 +1017,66 @@
       "race_id": 17,
       "race_name": "Italian GP (Race)",
       "accuracy": 40.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 18,
+      "race_name": "Spanish GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 18,
+      "race_name": "Spanish GP (Race)",
+      "accuracy": 60.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 18,
+      "race_name": "Spanish GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Veerle",
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "accuracy": 80.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 19,
+      "race_name": "Azerbaijan GP (Race)",
+      "accuracy": 20.0
+    },
+    {
+      "player": "Bernadette",
+      "race_id": 20,
+      "race_name": "Bahrain GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Sven",
+      "race_id": 20,
+      "race_name": "Bahrain GP (Race)",
+      "accuracy": 40.0
+    },
+    {
+      "player": "Milan",
+      "race_id": 20,
+      "race_name": "Bahrain GP (Race)",
+      "accuracy": 20.0
     }
   ],
   "race_details": [
@@ -3857,6 +3991,443 @@
               "pred": "Albon",
               "predPos": "P12",
               "actualPos": "P17",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 18,
+      "grand_prix": "Spanish GP",
+      "display_name": "Spanish Grand Prix",
+      "race_type": "Race",
+      "round": 14,
+      "date": "2026-09-13",
+      "circuit": "Madrid",
+      "actual": {
+        "pole": "Norris",
+        "p1": "Antonelli",
+        "p2": "Verstappen",
+        "p3": "Norris"
+      },
+      "bonus_driver": "Leclerc",
+      "bonus_actual_pos": "P4",
+      "players": [
+        {
+          "name": "Bernadette",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Piastri",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Leclerc",
+              "predPos": "P4",
+              "actualPos": "P4",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Leclerc",
+              "predPos": "P3",
+              "actualPos": "P4",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Leclerc",
+              "predPos": "P3",
+              "actualPos": "P4",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 19,
+      "grand_prix": "Azerbaijan GP",
+      "display_name": "Azerbaijan Grand Prix",
+      "race_type": "Race",
+      "round": 15,
+      "date": "2026-09-26",
+      "circuit": "Baku City Circuit",
+      "actual": {
+        "pole": "Russell",
+        "p1": "Russell",
+        "p2": "Verstappen",
+        "p3": "Hadjar"
+      },
+      "bonus_driver": "Lawson",
+      "bonus_actual_pos": "P12",
+      "players": [
+        {
+          "name": "Sven",
+          "total": 13,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Russell",
+              "score": 3,
+              "state": "hit"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Verstappen",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Lawson",
+              "predPos": "P12",
+              "actualPos": "P12",
+              "score": 3,
+              "state": "hit"
+            }
+          ]
+        },
+        {
+          "name": "Veerle",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Russell",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Lawson",
+              "predPos": "P11",
+              "actualPos": "P12",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P2",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Leclerc",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Lawson",
+              "predPos": "P13",
+              "actualPos": "P12",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 4,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 2,
+              "state": "partial"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Lawson",
+              "predPos": "P10",
+              "actualPos": "P12",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": 20,
+      "grand_prix": "Bahrain GP",
+      "display_name": "Bahrain Grand Prix",
+      "race_type": "Race",
+      "round": 16,
+      "date": "2026-10-04",
+      "circuit": "Kuala Lumpur",
+      "actual": {
+        "pole": null,
+        "p1": "Verstappen",
+        "p2": "Antonelli",
+        "p3": "Hamilton"
+      },
+      "bonus_driver": "Norris",
+      "bonus_actual_pos": "P8",
+      "players": [
+        {
+          "name": "Sven",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Hadjar",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Norris",
+              "predPos": "P5",
+              "actualPos": "P8",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Bernadette",
+          "total": 10,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Antonelli",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Antonelli",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P3",
+              "pred": "Russell",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Norris",
+              "predPos": "P4",
+              "actualPos": "P8",
+              "score": 0,
+              "state": "miss"
+            }
+          ]
+        },
+        {
+          "name": "Milan",
+          "total": 5,
+          "picks": [
+            {
+              "slot": "POLE",
+              "pred": "Verstappen",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P1",
+              "pred": "Verstappen",
+              "score": 5,
+              "state": "hit"
+            },
+            {
+              "slot": "P2",
+              "pred": "Hadjar",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "P3",
+              "pred": "Norris",
+              "score": 0,
+              "state": "miss"
+            },
+            {
+              "slot": "BONUS",
+              "pred": "Norris",
+              "predPos": "P3",
+              "actualPos": "P8",
               "score": 0,
               "state": "miss"
             }

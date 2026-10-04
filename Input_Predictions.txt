@@ -71,3 +71,13 @@ Veerle,Italian GP,Race,Russell,Russell,Norris,Leclerc,Albon,P16
 Bernadette,Italian GP,Race,Russell,Russell,Norris,Leclerc,Albon,P17
 Sven,Italian GP,Race,Russell,Russell,Norris,Leclerc,Albon,P12
 Milan,Italian GP,Race,Russell,Russell,Leclerc,Norris,Albon,P17
+Veerle,Spanish GP,Race,Leclerc,Antonelli,Leclerc,Russell,Leclerc,P3
+Bernadette,Spanish GP,Race,Antonelli,Antonelli,Piastri,Verstappen,Leclerc,P4
+Milan,Spanish GP,Race,Antonelli,Antonelli,Russell,Leclerc,Leclerc,P3
+Veerle,Azerbaijan GP,Race,Verstappen,Russell,Verstappen,Leclerc,Lawson,P11
+Bernadette,Azerbaijan GP,Race,Verstappen,Verstappen,Antonelli,Russell,Lawson,P10
+Sven,Azerbaijan GP,Race,Russell,Russell,Antonelli,Verstappen,Lawson,P12
+Milan,Azerbaijan GP,Race,Antonelli,Antonelli,Verstappen,Leclerc,Lawson,P13
+Sven,Bahrain GP,Race,Verstappen,Verstappen,Antonelli,Hadjar,Norris,P5
+Bernadette,Bahrain GP,Race,Antonelli,Verstappen,Antonelli,Russell,Norris,P4
+Milan,Bahrain GP,Race,Verstappen,Verstappen,Hadjar,Norris,Norris,P3

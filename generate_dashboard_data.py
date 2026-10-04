@@ -28,6 +28,9 @@ race_meta = {
     'Hungarian GP':  {'round': 11, 'date': '2026-07-26', 'name': 'Hungarian Grand Prix', 'circuit': 'Hungaroring, Budapest'},
     'Dutch GP':      {'round': 12, 'date': '2026-08-23', 'name': 'Dutch Grand Prix',     'circuit': 'Circuit Zandvoort'},
     'Italian GP':    {'round': 13, 'date': '2026-09-06', 'name': 'Italian Grand Prix',   'circuit': 'Monza'},
+    'Spanish GP':    {'round': 14, 'date': '2026-09-13', 'name': 'Spanish Grand Prix',   'circuit': 'Madrid'},
+    'Azerbaijan GP': {'round': 15, 'date': '2026-09-26', 'name': 'Azerbaijan Grand Prix', 'circuit': 'Baku City Circuit'},
+    'Bahrain GP':    {'round': 16, 'date': '2026-10-04', 'name': 'Bahrain Grand Prix',    'circuit': 'Kuala Lumpur'},
 }
 
 
